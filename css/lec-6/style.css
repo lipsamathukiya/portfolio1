@@ -1,0 +1,28 @@
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: white;
+}
+
+.outer{
+    width: 700px;
+    height: 750px;
+    background: #efefef;
+}
+
+.card{
+    width: 500px;
+    height: 500px;
+    background: #2196f3;
+    padding: 30px;
+    margin: 85px auto;  
+}
+
+.card img{
+    width: 100%;
+    height: 100%;
+}

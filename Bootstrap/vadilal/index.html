@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap-5.3.8-dist/css/bootstrap.min.css" />
+    <script src="./bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container-fluid py-3">
+        <div class="row align-items-center">
+
+            <div class="col-4">
+                <button class="btn btn-danger" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+
+            <div class="col-4 text-center">
+                <img src="./img/logo.png" alt="logo" class="img-fluid"
+                    style="width: 100px; height: 50px; object-fit: contain;">
+            </div>
+
+            <div class="col-4 text-end">
+                <button class="btn btn-danger">Login</button>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+        id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasScrollingLabel">
+                Offcanvas Menu
+            </h5>
+
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+            </button>
+        </div>
+
+        <div class="offcanvas-body">
+            <p>Welcome to our Ice Cream shop!</p>
+        </div>
+
+    </div>
+    <div class="container-fluid p-0">
+        <div class="position-relative">
+
+            <img src="./img/bg.jpg" alt="bg" class="img-fluid w-100 opacity-50"
+                style="height: 500px; object-fit: cover;">
+
+            <div class="position-absolute top-50 start-50 translate-middle text-center w-100 px-3">
+
+                <h1 class="fs-1" style="color: rgb(243, 63, 93);">
+                    Sweet & Delicious Ice Cream
+                </h1>
+
+                <p class="text-secondary">
+                    Treat yourself to a scoop of happiness! Discover our delicious,<br>
+                    creamy and refreshing ice creams made with love and the finest ingredients.
+                </p>
+
+                <button class="btn btn-danger">
+                    Shop Now
+                </button>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="container py-4">
+        <div class="row align-items-center g-4">
+
+            <div class="col-12 col-lg-4 text-center text-lg-end">
+
+                <h4 style="color: rgb(241, 102, 125);">Vanilla</h4>
+                <p style="color: gray;">
+                    Classic creamy vanilla ice cream with a smooth and delicious taste.
+                </p>
+
+                <h4 style="color: rgb(241, 102, 125);">Chocolate</h4>
+                <p style="color: gray;">
+                    Rich and creamy chocolate ice cream made for every chocolate lover.
+                </p>
+
+            </div>
+
+            <div class="col-12 col-lg-4 text-center">
+                <img src="./img/images.jpg" class="rounded-circle img-fluid" alt="Ice Cream"
+                    style="height: 150px; width: 150px;">
+            </div>
+
+            <div class="col-12 col-lg-4 text-center text-lg-start">
+
+                <h4 style="color: rgb(241, 102, 125);">Butterscotch</h4>
+                <p style="color: gray;">
+                    Creamy butterscotch ice cream with crunchy caramel bits and a rich flavor.
+                </p>
+
+                <h4 style="color: rgb(241, 102, 125);">Mint Chocolate</h4>
+                <p style="color: gray;">
+                    Refreshing mint ice cream blended with delicious chocolate chips.
+                </p>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="py-5 position-relative bg-danger text-white">
+
+            <div class="container text-center">
+
+                <h3 class="mb-3">Delicious Ice Cream</h3>
+
+                <p class="mb-4">
+                    Enjoy the delicious taste of our creamy and refreshing ice cream,
+                    made with fresh ingredients and available in a variety of wonderful flavors.
+                </p>
+
+                <h5>Cookies & Cream</h5>
+
+                <p class="mb-0">
+                    Creamy vanilla ice cream mixed with crunchy chocolate cookie pieces.
+                </p>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="container py-3">
+        <div class="row row-gap-4 justify-content-center">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="./img/im1.jpg" class="card-img-top" alt="im1" style="height: 200px;">
+                    <div class="card-body">
+                        <h5 class="card-title text-danger">Fresh Ingredients</h5>
+                        <p class="card-text">
+                            We use fresh and high-quality ingredients to create delicious and creamy ice cream.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="./img/im2.jpg" class="card-img-top" alt="im2" style="height: 200px;">
+                    <div class="card-body">
+                        <h5 class="card-title text-danger">Delicious Flavors</h5>
+                        <p class="card-text">
+                            Explore a variety of tasty flavors, from classic vanilla and chocolate to fruity.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="./img/im3.jpg" class="card-img-top" alt="im3" style="height: 200px;">
+                    <div class="card-body">
+                        <h5 class="card-title text-danger">Sweet Happiness</h5>
+                        <p class="card-text">
+                            Enjoy every scoop of our refreshing ice cream and make every moment a little sweeter.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    </div>
+    <div class="container-fluid">
+        <div class="py-5 position-relative bg-danger text-white" style="height: 300px;">
+
+            <div class="position-absolute top-50 start-50 translate-middle text-center w-100">
+
+                <h5>Get In Touch</h5>
+
+                <div class="d-flex justify-content-center align-items-center gap-2 ">
+                    <hr class="w-25">
+                    <i class="fa-solid fa-ice-cream"></i>
+                    <hr class="w-25">
+                </div>
+
+                <div class="d-flex justify-content-center gap-4 mt-3 flex-wrap">
+
+                    <a href="#" class="text-white text-decoration-none">
+                        <i class="fa-brands fa-instagram"></i>
+                        Instagram
+                    </a>
+
+                    <a href="#" class="text-white text-decoration-none">
+                        <i class="fa-brands fa-youtube"></i>
+                        YouTube
+                    </a>
+
+                    <a href="#" class="text-white text-decoration-none">
+                        <i class="fa-brands fa-facebook"></i>
+                        Facebook
+                    </a>
+
+                </div>
+                <div class="mt-5">
+                    <p>
+                        Other : Sweet & Delicious Ice Cream
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

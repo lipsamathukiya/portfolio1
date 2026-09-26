@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>job application from</title>
+</head>
+<body>
+    
+<center>
+    <form>
+    <table border="2" cellpadding="10">
+        <tr>
+            <th colspan="2"><h2>Job Application Form</h2></th>
+        </tr>
+
+        <tr>
+            <td><b>Full Name:</b></td>
+            <td><input type="text" placeholder="Enter your name"></td>
+        </tr>
+        <tr>
+            <td><b>Email Address:</b></td>
+            <td><input type="text" pattern=".+@.+\..+"required></td>
+        </tr>
+        <tr>
+            <td><b>Phone number:</b></td>
+            <td><input type="text" placeholder="123-456-7890" tel="[0-9]{10}"></td>
+        </tr>
+        <tr>
+            <td><b>Gender:</b></td>
+            <td><input type="radio" name="gender">male
+            <input type="radio" name="gender">female</td>
+        </tr>
+        <tr>
+            <td><b>Job Role:</b></td>
+            <td>
+                <select>
+                    <option hidden>---select role---</option>
+                    <option>full stack</option>
+                    <option>data science</option>
+                    <option>design</option>
+                    <option>cyber security</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><b>Date of Birth:</b></td>
+            <td><input type="date"></td>
+         </tr>
+         <tr>
+            <td><b>Favorite colour:</b></td>
+            <td><input type="color"></td>
+         </tr>
+         <tr>
+            <td><b>Uplod Resume:</b></td>
+            <td><input type="file"></td>
+         </tr>
+         <tr>
+            <td><b>Skills:</b></td>
+            <td><input type="checkbox">HTMl
+            <input type="checkbox">css
+            <input type="checkbox">JavaScript
+            <input type="checkbox">React</td>
+         </tr>
+         <tr>
+            <td><b>Cover Latter:</b></td>
+         <td><textarea placeholder="write somthing about yorself..."></textarea></td>
+         </tr>
+    <tr>
+    <td colspan="2" align="center">
+        <input type="submit">
+        <input type="reset">
+    </td>
+</tr>
+</table>
+</form>      
+</body>
+</html>

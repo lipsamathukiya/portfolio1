@@ -1,0 +1,349 @@
+body{
+    margin: 0;
+    background-color: hsl(38, 50%, 80%);
+
+}
+.menu{
+    width:90%;
+    padding:20px 60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.logo{
+    width:200px;
+    height: 100px;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.header ul{
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+.header ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 25px;
+}
+
+.header i{
+    font-size: 30px;
+}
+
+.btn1{
+    display:none;
+}
+
+
+.bg img{
+    width: 100%;
+}
+
+
+.categories{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.categories h2{
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.categories p{
+    font-size: 20px;
+}
+.card-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card{
+    width: 400px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+.card img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+.card:hover img{
+        transform: scale(1.4);
+}
+.text{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.4);
+}
+.text h3{
+    color: white;
+    font-size: 30px;
+}
+
+.text a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 20px;
+    
+}
+.shake-box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    
+}
+
+.shake-card{
+    width: 300px;
+    background: #dcc2b4;
+    border-radius: 35px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    box-sizing: border-box;
+    object-fit: contain;
+}
+.likes-btn{
+    position: absolute;
+    left: 15px;
+    border: none;
+    background: #b4b2b2;
+    color: #333;
+    padding:10px;
+    border-radius: 20px;
+    font-size: 16px;
+
+}
+.shake-card img{
+    width:120px;
+    height:180px;
+    margin-top:25px;
+}
+.shake-card h3{ 
+    font-size: 25px;
+
+}
+.price{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    font-size: 30px;
+}
+.price button{
+    border:none;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #6e6c6c;
+    color: white;
+    font-size: 20px;
+    align-items: center;
+}
+.blog-box{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    gap:30px;
+
+}
+
+.car1{
+    width:400px;
+    background:#fadfcf;
+    border-radius:25px;
+    padding:15px;
+
+}
+
+.car1 img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:40px;
+}
+.car1 h3{
+    font-size: 20px;
+}
+
+.car1 p{
+    font-size:18px;
+    color:#666;
+    line-height:22px;
+}
+
+.car1 button{
+    margin-top:15px;
+    padding:8px 18px;
+    border:rgb(15, 15, 15);
+    border-radius:20px;
+    background:transparent;
+}
+
+.car1 button:hover{
+    background:#000;
+    color:#fff;
+}
+.footer {
+    background-color: black;
+    width: 100%;
+    color: white;
+    padding-top: 30px;
+    margin-top: 50px;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    width: 80%;
+    box-sizing: border-box;
+    border-top: 3px solid white;
+    margin: 20px auto;
+}
+
+.links a {
+    text-decoration: none;
+    color: white;
+}
+
+.footaterory {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
+
+.company {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
+
+.follow {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
+
+.bottam {
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgba(71, 61, 50, 0.962);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+
+.bottam a {
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 992px){
+
+    .header{
+        display: none;
+    }
+
+    .btn1{
+        display: flex;
+    }
+
+    .card-box{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card{
+        width: 90%;
+    }
+
+    .shake-box{
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .price{
+        font-size: 24px;
+    }
+
+    .price button{
+        font-size: 10px;
+        padding: 4px;
+    }
+        .blog-box{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .car1{
+        width: 45%;
+    }
+
+    .car1 img{
+        height: 200px;
+    }
+
+    .car1 h3{
+        font-size: 18px;
+    }
+
+    .car1 p{
+        font-size: 16px;
+    }
+
+    .car1 button{
+        padding: 4px 10px;
+    }
+        .links{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .bottam{
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .bottam a{
+        padding: 10px;
+    }
+
+}
+
+
+

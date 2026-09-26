@@ -1,0 +1,192 @@
+body {
+    background-color: black;
+    padding: 50px;
+}
+
+/* Header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #0f171e;
+    padding: 15px 40px;
+    box-sizing: border-box;
+    z-index: 1000;
+}
+
+/* Logo */
+.logo {
+    margin-right: 40px;
+    color: #fff;
+    font-size: 20px;
+}
+
+/* Navigation */
+.div {
+    display: flex;
+    gap: 25px;
+}
+
+.div a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Line */
+.line {
+    width: 1px;
+    height: 25px;
+    background: #9c9393;
+}
+
+/* Right Side */
+.right {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.right a {
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.right .fa-circle-user {
+    font-size: 25px;
+}
+
+/* Language Box */
+.lang-box {
+    position: relative;
+    display: inline-block;
+}
+
+/* Language Button */
+.lang-btn {
+    background: rgba(255,255,255,.12);
+    color: #fff;
+    border: 1px solid rgba(255,255,255,.15);
+    border-radius: 10px;
+    padding: 10px 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.lang-btn i {
+    color: white;
+    transition: .3s ease;
+}
+
+.lang-box:hover .lang-btn {
+    background: #fff;
+    color: #000;
+}
+
+.lang-box:hover .lang-btn i {
+    color: #000;
+    transform: rotate(180deg);
+}
+
+/* Language Menu */
+.lang-menu {
+    position: absolute;
+    top: 55px;
+    right: 0;
+
+    width: 650px;
+    min-height: 350px;
+
+    background: #1b1d21;
+    border-radius: 15px;
+
+    padding: 25px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 25px;
+    row-gap: 12px;
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(15px);
+    transition: .35s;
+
+    box-shadow: 0 20px 50px rgba(0,0,0,.55);
+    z-index: 999;
+}
+
+.lang-box:hover .lang-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.lang-menu a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.lang-menu a:hover {
+    background: #fff;
+    color: #000;
+}
+
+/* Join Button */
+.join {
+    border-radius: 5px;
+    width: 90px;
+    height: 42px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: rgb(81, 115, 226);
+    color: white;
+    border: none;
+}
+
+/* Main Heading */
+.div h1 {
+    color: white;
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 250px;
+}
+
+/* Paragraph */
+.p {
+    color: white;
+    font-size: 18px;
+    display: flex;
+    margin-top: 20px;
+}
+
+/* Main Button */
+.btn {
+    width: 220px;
+    height: 55px;
+    border-radius: 8px;
+    background-color: white;
+    color: black;
+    font-size: 18px;
+    margin-top: 25px;
+    border: none;
+}

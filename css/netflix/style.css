@@ -1,0 +1,288 @@
+body {
+    width: 100%;
+    margin: 0;
+    background-color: black;
+
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background: url("./img/bgimg.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.header {
+    width: 96%;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.language-box {
+    display: flex;
+    width: 100px;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 8px 12px;
+    font-size: 18px;
+    color: white;
+
+}
+
+
+.language-box select {
+    background: transparent;
+    border: none;
+    color: white;
+    outline: none;
+    width: 100px;
+}
+
+.language-box option {
+    color: black;
+}
+
+.right button {
+    padding: 8px 18px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.content {
+    position: relative;
+    color: white;
+    text-align: center;
+    top: 30px;
+}
+
+.content h1 {
+    font-size: 80px;
+    font-weight: bold;
+}
+
+.content h3 {
+    font-size: 30px;
+    margin: 20px;
+}
+
+.content p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.mail {
+    width: 90%;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.mail p {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.input-box {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.input-box input {
+    width: 400px;
+    padding: 15px;
+    background: transparent;
+    border: 1px solid gray;
+    color: white;
+    font-size: 18px;
+}
+
+.input-box button {
+    padding: 15px 30px;
+    background: red;
+    color: white;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.line {
+    border: 3px solid red;
+
+}
+
+.box-movie {
+    width: 90%;
+    margin: 30px auto;
+    position: relative;
+}
+
+.box-movie h2 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.card {
+    display: flex;
+    gap: 40px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-left: 15px;
+}
+
+.movie {
+    position: relative;
+    flex-shrink: 0;
+    overflow: visible;
+    transition: 0.5s;
+}
+
+.movie:hover {
+    transform: scale(1.08);
+}
+
+.movie span {
+    position: absolute;
+    left: -18px;
+    bottom: 5px;
+    font-size: 80px;
+    font-weight: 900;
+    color: black;
+    text-shadow: 4px 4px 0 white;
+    z-index: 2;
+}
+
+.card img {
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+    display: block;
+}
+
+.feature-section {
+    width: 96%;
+    margin: 60px auto;
+}
+
+.feature-section h2 {
+    color: white;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.feature-box {
+    display: flex;
+    gap: 20px;
+}
+
+.feature-card {
+    width: 25%;
+    height: 280px;
+    background: linear-gradient(#1b1b4b, #25132d);
+    border-radius: 15px;
+    padding: 20px;
+    position: relative;
+}
+
+.feature-card h3 {
+    color: white;
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.feature-card p {
+    color: #cfcfcf;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.feature-card i {
+    position: absolute;
+    right: 20px;
+    bottom: 15px;
+    font-size: 35px;
+    color: #ff5ca8;
+}
+
+.question {
+    width: 96%;
+    margin: 50px auto;
+}
+
+.question h2 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.box {
+    background: #2d2d2d;
+    color: white;
+    padding: 25px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box:hover {
+    background: #444;
+}
+
+.box span {
+    font-size: 24px;
+}
+
+.box i {
+    font-size: 25px;
+}
+
+.footer {
+    width: 90%;
+    margin: 60px auto;
+}
+
+.call {
+    color: #999;
+    margin-bottom: 30px;
+}
+
+.call a {
+    color: #999;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.links div {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.links a {
+    color: #999;
+    font-size: 14px;
+}
+
+.country {
+    color: #999;
+    margin-top: 40px;
+    font-size: 18px;
+}

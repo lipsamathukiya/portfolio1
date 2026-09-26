@@ -1,0 +1,53 @@
+.h1{
+    text-align: center;
+
+}
+.products{
+    width:90%;
+    margin:40px auto;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+}
+
+.card{
+    width:300px;
+    height:250px;
+    background:#f2f2f2;
+    border:1px solid #ccc;
+    text-align:center;
+    line-height:250px;
+    margin-bottom:20px;
+}
+
+
+@media(max-width:575px){
+    .card{
+        width:100%;
+    }
+}
+@media(min-width:576px) and (max-width:767px){
+    .card{
+        width:48%;
+    }
+}
+@media(min-width:768px) and (max-width:991px){
+    .card{
+        width:48%;
+    }
+}
+@media(min-width:992px) and (max-width:1199px){
+    .card{
+        width:31%;
+    }
+}
+@media(min-width:1200px) and (max-width:1399px){
+    .card{
+        width:23%;
+    }
+}
+@media(min-width:1400px){
+    .card{
+        width:18%;
+    }
+}

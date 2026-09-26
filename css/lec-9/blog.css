@@ -1,0 +1,136 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.container{
+    width:100%;
+    min-height:100vh;
+    display:grid;
+    grid-template-columns:220px 1fr;
+    grid-template-rows:80px auto;
+    gap:10px;
+    padding:10px;
+}
+
+.header{
+    grid-column:1/3;
+    background:#222;
+    color:white;
+    height:80px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.sidebar{
+    border:1px solid #ccc;
+    padding:15px;
+}
+
+.sidebar p{
+    margin-top:20px;
+    margin-bottom:5px;
+}
+
+.sidebar select{
+    width:100%;
+}
+
+.content{
+    border:1px solid #ccc;
+    padding:15px;
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:20px;
+    align-items:start;
+}
+
+.post{
+    margin-bottom:20px;
+}
+
+.post h2{
+    margin-bottom:10px;
+}
+
+.post p{
+    margin-bottom:10px;
+    line-height:1.6;
+}
+
+.post img{
+    width:150px;
+    height:100px;
+    object-fit:cover;
+    display:block;
+    margin-top:10px;
+}
+
+.post p::first-letter{
+    color:red;
+    font-size:30px;
+    font-weight:bold;
+}
+
+.post::selection{
+    background:yellow;
+    color:red;
+}
+
+
+.comments h2{
+    margin-bottom:10px;
+}
+
+.comments ul{
+    margin-left:20px;
+    font-family:'Lucida Sans','Lucida Sans Regular',
+    'Lucida Grande','Lucida Sans Unicode',
+    Geneva,Verdana,sans-serif;
+}
+
+.comments li{
+    padding:8px;
+}
+
+.comments li:nth-child(1){
+    background:lightgreen;
+    font-weight:bold;
+}
+
+.comments li:nth-child(2){
+    background:lightblue;
+    font-weight:bold;
+}
+
+.comments li:nth-child(3){
+    background:lightpink;
+    color:red;
+    font-weight:bold;
+}
+
+.comments li:nth-child(4){
+    background:rgb(250,250,106);
+}
+
+.right{
+    width:100%;
+}
+
+.right-content{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.right-content iframe{
+    width:100%;
+    height:250px;
+    border:2px solid #444;
+    border-radius:10px;
+    overflow:scroll;
+}

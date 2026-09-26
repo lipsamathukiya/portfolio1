@@ -1,0 +1,205 @@
+body{
+    background-color: gray;
+}.header{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 25px;
+}
+.li{
+font-size: 20px;
+color: white;
+font-family: Arial, Helvetica, sans-serif;
+}
+.box1{
+    box-sizing: border-box;
+    background-color: yellow;
+    display: flex;
+    height: 450px;
+    margin: 30px 30px 0;
+}
+.box1 div{
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+    font-size: 30px;
+}
+.footer{
+    width: 100%;
+    border-top: 50px solid white;
+
+}
+.box2{
+    box-sizing: border-box;
+    background-color: yellow;
+    display: flex;
+    justify-content: flex-end;
+    height: 450px;
+    margin: 30px 30px 0;
+}
+.box2 div{
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+    font-size: 30px;
+}
+.box3{
+    box-sizing: border-box;
+    background-color: yellow;
+    display: flex;
+    justify-content:center;
+    height: 450px;
+    margin: 30px 30px 0;
+}
+.box3 div{
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+    font-size: 30px;
+}
+.box4{
+    box-sizing: border-box;
+    background-color: yellow;
+    display: flex;
+    justify-content:space-between;
+    height: 450px;
+    margin: 30px 30px 0;
+}
+.box4 div{
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+    font-size: 30px;
+}
+.box5{
+    box-sizing: border-box;
+    background-color: yellow;
+    display: flex;
+    justify-content:space-around;
+    height: 450px;
+    margin: 30px 30px 0;
+}
+.box5 div{
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+    font-size: 30px;
+}
+.box6{
+    box-sizing: border-box;
+    background-color: yellow;
+    display: flex;
+    justify-content:space-evenly;
+    height: 450px;
+    margin: 30px 30px 0;
+}
+.box6 div{
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+    font-size: 30px;
+}
+.box7{
+    box-sizing: border-box;
+    background-color: yellow;
+    display: flex;
+    align-content:flex-start;
+    height: 450px;
+    margin: 30px 30px 0;
+}
+.box7 div{
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+    font-size: 30px;
+}
+.box8{
+    box-sizing: border-box;
+    background-color: yellow;
+    display: flex;
+    align-items: end;
+    align-content:flex-end;
+    height: 450px;
+    margin: 30px 30px 0;
+}
+.box8 div{
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+    font-size: 30px;
+}
+.box9{
+    box-sizing: border-box;
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+    align-content:center;
+    height: 450px;
+    margin: 30px 30px 0;
+}
+.box9 div{
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+    font-size: 30px;
+}
+.box10{
+    box-sizing: border-box;
+    background-color: yellow;
+    display: flex;
+    align-items: stretch;
+    align-content:stretch;
+    height: 450px;
+    margin: 30px 30px 0;
+}
+.box10 div{
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+    font-size: 30px;
+}
+.box11{
+    box-sizing: border-box;
+    background-color: yellow;
+    display: flex;
+    flex-wrap: wrap;
+    align-content:space-between;
+    height: 450px;
+    margin: 30px 30px 0;
+}
+.box11 div{
+    width: 200px;
+    height: 150px;
+    background-color: pink;
+    font-size: 30px;
+}
+.box12{
+    box-sizing: border-box;
+    background-color: yellow;
+    display: flex;
+    flex-wrap: wrap;
+    align-content:space-around;
+    height: 450px;
+    margin: 30px 30px 0;
+}
+.box12 div{
+    width: 200px;
+    height: 150px;
+    background-color: pink;
+    font-size: 30px;
+}
+.box13{
+    box-sizing: border-box;
+    background-color: yellow;
+    display: flex;
+    flex-wrap: wrap;
+    align-content:space-evenly;
+    height: 450px;
+    margin: 30px 30px 0;
+}
+.box13 div{
+    width: 200px;
+    height: 150px;
+    background-color: pink;
+    font-size: 30px;
+}
