@@ -14,201 +14,571 @@
         crossorigin="anonymous" referrerpolicy="no-referrer">
     <title>portfolio</title>
 </head>
+<style>
+    /* Project Card Hover Effect */
+    .project-card {
+        transition: all 0.3s ease;
+    }
+
+    .project-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 25px rgba(13, 202, 240, 0.4);
+    }
+</style>
+
+
+
 
 <body>
     <div class="container-fuild" style="background: #0f172a;">
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container">
-                <h3 class="text-info">LIPSA</h3>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
-                    style="background-color: #f8f9fa;">
+
+                <!-- Logo -->
+                <a class="navbar-brand text-info fw-bold fs-3" href="#home">
+                    LM
+                </a>
+                <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="menu">
-                    <ul class="navbar-nav mx-auto">
+
+                    <ul class="navbar-nav mx-auto text-center">
+
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#home">Home</a>
+                            <a class="nav-link text-white px-3" href="#home">
+                                Home
+                            </a>
                         </li>
+
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#about">About</a>
+                            <a class="nav-link text-white px-3" href="#about">
+                                About
+                            </a>
                         </li>
+
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#skills">Skills</a>
+                            <a class="nav-link text-white px-3" href="#skills">
+                                Skills
+                            </a>
                         </li>
+
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#projects">Projects</a>
+                            <a class="nav-link text-white px-3" href="#projects">
+                                Projects
+                            </a>
                         </li>
+
                     </ul>
-                    <a href="#contact" class="btn" style="background-color:#0d6efd; color:white; border-radius:20px;">
-                        Contact me
-                    </a>
+
+                    <div class="text-center mt-3 mt-lg-0">
+                        <a href="#contact" class="btn btn-primary rounded-pill px-4">
+                            Contact Me
+                        </a>
+                    </div>
 
                 </div>
             </div>
         </nav>
-        <section id="home" class="hero" style="height: 100vh;display: flex; align-items: center;">
+        <section id="home" class="hero">
+
             <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6 text-white">
-                        <h5> ✋ Hello, I'm</h5>
-                        <h1 class="display-3 fw-bold">
+                <div class="row align-items-center min-vh-100 py-5">
+                    <div class="col-lg-6 col-md-7 text-white">
+
+                        <h5 class="mb-2">
+                            👋 Hello, I'm
+                        </h5>
+
+                        <h1 class="display-3 fw-bold mb-2">
                             Lipsa Mathukiya
                         </h1>
-                        <h2 class="text-info">
+
+                        <h2 class="text-info fw-bold">
                             Full Stack Developer
                         </h2>
-                        <p class="mt-3" style="color: #cbd5e1; font-size: 18px;">
-                            I build responsive and modern web applications
-                            using HTML, CSS, Bootstrap, C language.
+
+                        <p class="mt-3 hero-text">
+                            I am a Full Stack Development learner at Red & White
+                            with a strong foundation in HTML, CSS, Bootstrap,
+                            and C programming. I enjoy creating responsive,
+                            user-friendly, and modern web applications.
                         </p>
+                        <div class="social-icons mt-4">
+
+                            <a href="https://lipsamathukiya.github.io/youtube/" target="_blank">
+                                <i class="fa-brands fa-youtube" style="width:45px; height:45px; border:2px solid white; border-radius:50%; display:inline-flex; align-items:center;
+                            justify-content:center;color:white;font-size:22px;">
+                                </i>
+                            </a>
+
+                            <a href="https://github.com/lipsamathukiya" target="_blank">
+                                <i class="fa-brands fa-github" style=" width:45px; height:45px; border:2px solid white; border-radius:50%; display:inline-flex; align-items:center;
+                            justify-content:center;color:white;font-size:22px;">
+
+                                </i>
+                            </a>
+
+                            <a href="https://www.linkedin.com/in/mathukiya-lipsa-187582417/" target="_blank">
+                                <i class="fa-brands fa-linkedin" style=" width:45px; height:45px; border:2px solid white; border-radius:50%; display:inline-flex; align-items:center;
+                            justify-content:center;color:white;font-size:22px;">
+                                </i>
+                            </a>
+
+                        </div>
+                        <div class="d-flex gap-3 mt-4">
+                            <a href="#projects" class="btn"
+                                style="background:#0d6efd;color:white; border:1px solid #0d6efd;border-radius:25px;padding:10px 22px;">
+                                View Project
+                            </a>
+                            <a href="#contact" class="btn"
+                                style="background:transparent; color:white;  border:1px solid #0dcaf0;  border-radius:25px;  padding:10px 22px;">
+                                Get in Touch
+                            </a>
+                        </div>
                     </div>
-                    <div class="col-lg-6 text-center">
-                        <img src="./img/l1.png" class="img-fluid rounded-circle" width="380" alt="Lipsa Mathukiya"
-                            style="border: 4px solid #0d6efd;">
+
+                    <div class="col-lg-6 col-md-5 text-center mt-5 mt-md-0">
+                        <img src="./img/l1.png" class="hero-img rounded-circle" alt="Lipsa Mathukiya" style="width: 100%;max-width: 380px;height: auto;
+                              aspect-ratio: 1/1;object-fit: cover;border: 5px solid #0d6efd;border-radius: 50%; ">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section id="skills" class="py-5 text-white">
+            <div class="container">
+
+                <div class="text-center mb-5">
+                    <h1 class="fw-bold">
+                        <span class="text-info">My</span> Skills
+                    </h1>
+                    <p style="color:#d9e2ec">
+                        Technologies and programming languages I have learned.
+                    </p>
+                </div>
+
+                <div class="row g-4 justify-content-center">
+
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="text-center p-4 rounded-4 h-100"
+                            style="background:#0d162b; border:1px solid #0d6efd;">
+
+                            <div style="width:55px; height:55px; margin:auto;
+                                border:1px solid #0d6efd; border-radius:10px;
+                                display:flex; align-items:center;
+                                justify-content:center;">
+                                <i class="fa-brands fa-html5" style="font-size:30px; color:#0dcaf0;"></i>
+                            </div>
+
+                            <h5 class="fw-bold mt-3">HTML</h5>
+                            <p style="color:#d9e2ec">Web Structure</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="text-center p-4 rounded-4 h-100"
+                            style="background:#0d162b; border:1px solid #0d6efd;">
+                            <div style="width:55px; height:55px; margin:auto;
+                                border:1px solid #0d6efd; border-radius:10px;
+                                display:flex; align-items:center;
+                                justify-content:center;">
+                                <i class="fa-brands fa-css3-alt" style="font-size:30px; color:#0dcaf0;"></i>
+                            </div>
+
+                            <h5 class="fw-bold mt-3">CSS</h5>
+                            <p style="color:#d9e2ec">Web Styling</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="text-center p-4 rounded-4 h-100"
+                            style="background:#0d162b; border:1px solid #0d6efd;">
+
+                            <div style="width:55px; height:55px; margin:auto;
+                                border:1px solid #0d6efd; border-radius:10px;
+                                display:flex; align-items:center;
+                                justify-content:center;">
+                                <i class="fa-brands fa-bootstrap" style="font-size:30px; color:#0dcaf0;"></i>
+                            </div>
+
+                            <h5 class="fw-bold mt-3">Bootstrap</h5>
+                            <p style="color:#d9e2ec">Responsive Design</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="text-center p-4 rounded-4 h-100"
+                            style="background:#0d162b; border:1px solid #0d6efd;">
+
+                            <div style="width:55px; height:55px; margin:auto;
+                                border:1px solid #0d6efd; border-radius:10px;
+                                display:flex; align-items:center;
+                                justify-content:center;">
+                                <i class="fa-solid fa-c" style="font-size:30px; color:#0dcaf0"></i>
+                            </div>
+
+                            <h5 class="fw-bold mt-3">C Programming</h5>
+                            <p style="color:#d9e2ec">Programming Basics</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="text-center p-4 rounded-4 h-100"
+                            style="background:#0d162b; border:1px solid #0d6efd;">
+
+                            <div style="width:55px; height:55px; margin:auto;
+                                border:1px solid #0d6efd; border-radius:10px;
+                                display:flex; align-items:center;
+                                justify-content:center;">
+                                <i class="fa-solid fa-code" style="color:#0dcaf0; font-size:30px;"></i>
+                            </div>
+
+                            <h5 class="fw-bold mt-3">C++ Programming</h5>
+                            <p style="color:#d9e2ec">Programming & OOP</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
+        <!--About-->
         <section id="about" class="py-5 text-white">
             <div class="container">
-                <div class="text-center mb-5 text-info">
-                    <h2 class="fw-bold ">About Me</h2>
-                    <p>
-                        A passionate BCA student interested in web development and coding.
+
+                <div class="text-center mb-5">
+                    <h1 class="fw-bold" style="font-size:38px;">
+                        <span class="text-info">About</span> Me
+                    </h1>
+
+                    <p style="color:#d9e2ec; font-size:15px;">
+                        A little about my education, skills and development journey.
                     </p>
                 </div>
-                <div class="row align-items-center">
+
+                <div class="row g-4">
                     <div class="col-lg-7">
-                        <p class="fs-5">
-                            I am Lipsa Mathukiya, a dedicated and enthusiastic
-                            Full Stack Developer. I enjoy building websites and
-                            web applications that are user-friendly and efficient.
-                        </p>
+                        <div class="p-4 rounded-4 h-100" style="background:#0d162b; border:1px solid #164b9c;">
 
-                        <p class="fs-5">
-                            I am currently a BCA student and constantly learning
-                            new technologies to improve my skills and create
-                            better solutions for the future.
-                        </p>
+                            <div class="d-flex align-items-center mb-4">
 
-                        <div class="row mt-4">
-                            <div class="col-md-4">
-                                <h5><i class="fa-solid fa-graduation-cap" style="color: rgb(241, 241, 157);"></i>Student
-                                </h5>
+                                <div style="width:48px;height:48px;border-radius:12px;
+                                    background:#10264a;border:1px solid #0d6efd;
+                                    display:flex;align-items:center;
+                                    justify-content:center;">
+                                    <i class="fa-solid fa-user" style="color:#0dcaf0;font-size:20px;"></i>
+                                </div>
+
+                                <div class="ms-3">
+                                    <h5 class="fw-bold mb-1" style="color:white;">
+                                        About Me
+                                    </h5>
+
+                                    <small style="color:#d9e2ec; font-size:13px;">
+                                        BCA Student & Full Stack Development Learner
+                                    </small>
+                                </div>
+
                             </div>
-                            <div class="col-md-4">
-                                <h5> <i class="fa-solid fa-location-dot" style="color:rgb(241, 241, 157);"></i>Jetpur
-                                </h5>
+
+                            <p style="color:#f1f5f9; font-size:15px; line-height:1.8;">
+                                I am a BCA student and an aspiring Full Stack Developer.
+                                I am currently learning Full Stack Development from
+                                Red & White Multimedia Education and building my knowledge in modern web development.
+                            </p>
+
+                            <p style="color:#f1f5f9; font-size:15px; line-height:1.8;">
+                                I have learned
+                                <strong style="color:#0dcaf0;">
+                                    HTML, CSS, Bootstrap and C Programming
+                                </strong>.
+                                I enjoy creating responsive, user-friendly and modern
+                                websites.
+                            </p>
+
+                            <p class="mb-4" style="color:#f1f5f9; font-size:15px; line-height:1.8;">
+                                My goal is to become a skilled Full Stack Developer and
+                                create useful and efficient web applications.
+                            </p>
+                            <div class="row g-3">
+                                <div class="col-sm-4">
+                                    <div class="text-center p-3 rounded-3" style="background:#101f38;
+                                        border:1px solid #164b9c;">
+
+                                        <i class="fa-solid fa-graduation-cap" style="color:#0dcaf0;font-size:20px;"></i>
+
+                                        <h6 class="fw-bold mt-2 mb-1" style="color:white;">
+                                            BCA
+                                        </h6>
+
+                                        <small style="color:#d9e2ec;">
+                                            Student
+                                        </small>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-4">
+                                    <div class="text-center p-3 rounded-3" style="background:#101f38;
+                                        border:1px solid #164b9c;">
+
+                                        <i class="fa-solid fa-code" style="color:#0dcaf0;font-size:20px;"></i>
+
+                                        <h6 class="fw-bold mt-2 mb-1" style="color:white;">
+                                            4+
+                                        </h6>
+
+                                        <small style="color:#d9e2ec;">
+                                            Skills Learned
+                                        </small>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="text-center p-3 rounded-3" style="background:#101f38;
+                                        border:1px solid #164b9c;">
+
+                                        <i class="fa-solid fa-laptop-code" style="color:#0dcaf0;font-size:20px;"></i>
+
+                                        <h6 class="fw-bold mt-2 mb-1" style="color:white;">
+                                            Web
+                                        </h6>
+
+                                        <small style="color:#d9e2ec;">
+                                            Development
+                                        </small>
+                                    </div>
+                                </div>
+
                             </div>
-                            <div class="col-md-4">
-                                <h5><i class="fa-solid fa-code"
-                                        style="color: rgb(241, 241, 157);rgb(214, 214, 144);"></i> Full Stack Developer
-                                </h5>
-                            </div>
+
                         </div>
                     </div>
-                    <div class="col-lg-5 mt-4 mt-lg-0">
-                        <div style="background:#ffffff; padding:30px; border-radius:20px; color:#212529;">
+                    <div class="col-lg-5">
+                        <div class="p-4 rounded-4 h-100" style="background:#0d162b;
+                            border:1px solid #164b9c;">
 
-                            <h4 class="fw-bold mb-4">Education</h4>
+                            <div class="d-flex align-items-center mb-4">
 
-                            <div style="margin-bottom:20px;">
-                                <strong style="display:block;">10th</strong>
-                                Shree sardar patel secondary and Higher secondery school joshipura,junagadh
-                                <br>
-                                <small class="fw-bold">Passing Year: 2020</small>
+                                <div style="width:48px;height:48px;border-radius:12px;
+                                    background:#10264a;border:1px solid #0d6efd;
+                                    display:flex;align-items:center;
+                                    justify-content:center;">
+
+                                    <i class="fa-solid fa-graduation-cap" style="color:#0dcaf0;font-size:20px;"></i>
+                                </div>
+
+                                <div class="ms-3">
+
+                                    <h5 class="fw-bold mb-1" style="color:white;">
+                                        Education
+                                    </h5>
+
+                                    <small style="color:#d9e2ec;font-size:13px;">
+                                        My academic journey
+                                    </small>
+
+                                </div>
+
                             </div>
+                            <div class="d-flex mb-4">
+                                <div class="me-3">
+                                    <div style="width:12px;height:12px;
+                                        background:#0dcaf0;
+                                        border-radius:50%;
+                                        margin-top:6px;">
+                                    </div>
+                                </div>
 
-                            <div style="margin-bottom:20px;">
-                                <strong style="display:block;">12th</strong>
-                                Shree sardar patel secondary and Higher secondery school joshipura,junagadh
-                                <br>
-                                <small class="fw-bold">Passing Year: 2022</small>
+                                <div>
+                                    <h6 class="fw-bold mb-1" style="color:white;">
+                                        10th
+                                    </h6>
+
+                                    <p class="mb-1" style="color:#f1f5f9;
+                                      font-size:13px;
+                                      line-height:1.6;">
+                                        Shree Sardar Patel Secondary and Higher
+                                        Secondary School, Joshipura, Junagadh.
+                                    </p>
+
+                                    <small style="color:#0dcaf0;">
+                                        Passing Year: 2021
+                                    </small>
+                                </div>
                             </div>
+                            <div class="d-flex mb-4">
 
-                            <div>
-                                <strong style="display:block;">BCA</strong>
-                                Shree V.N borad mahila bca college joshipura, junagadh
-                                <br>
-                                <small class="fw-bold">Current Present</small>
+                                <div class="me-3">
+                                    <div style="width:12px;height:12px;
+                                        background:#0dcaf0;
+                                        border-radius:50%;
+                                        margin-top:6px;">
+                                    </div>
+                                </div>
+                                <div>
+                                    <h6 class="fw-bold mb-1" style="color:white;">
+                                        12th
+                                    </h6>
+                                    <p class="mb-1" style="color:#f1f5f9;
+                                      font-size:13px;
+                                      line-height:1.6;">
+                                        Shree Sardar Patel Secondary and Higher
+                                        Secondary School, Joshipura, Junagadh.
+                                    </p>
+                                    <small style="color:#0dcaf0;">
+                                        Passing Year: 2023
+                                    </small>
+                                </div>
+
                             </div>
-
+                            <div class="d-flex">
+                                <div class="me-3">
+                                    <div style="width:12px;height:12px;
+                                        background:#0dcaf0;
+                                        border-radius:50%;
+                                        margin-top:6px;">
+                                    </div>
+                                </div>
+                                <div>
+                                    <h6 class="fw-bold mb-1" style="color:white;">
+                                        BCA
+                                    </h6>
+                                    <p class="mb-1" style="color:#f1f5f9;
+                                      font-size:13px;
+                                      line-height:1.6;">
+                                        Shree V. N. Borad Mahila BCA College,
+                                        Joshipura, Junagadh.
+                                    </p>
+                                    <small style="color:#0dcaf0;">
+                                        Currently Pursuing
+                                    </small>
+                                </div>
+                            </div>
                         </div>
-
                     </div>
                 </div>
             </div>
         </section>
-        
+        <!--projects-->
         <section id="projects" class="py-5">
             <div class="container">
-                <div class="text-center mb-5 text-info">
-                    <h2 class="fw-bold">My Projects</h2>
-                    <p>
-                        Some projects developed using HTML, CSS, Bootstrap and C Language.
+                <div class="text-center mb-5 text-white">
+                    <h1 class="fw-bold">
+                        <span class="text-info">My</span> Projects
+                    </h1>
+                    <p style="color:#d9e2ec;">
+                        Some projects developed using HTML, CSS, Bootstrap, C and C++.
                     </p>
+
                 </div>
-                <div class="row g-4">
-                    <div class="col-md-6 col-lg-3">
-                        <div class="card ">
-                            <img src="img/html.png" class="card-img-top" style="height: 200px;" alt="HTML Project">
-                            <div class="card-body">
-                                <h4 class="fw-bold">HTML Project</h4>
-                                <p class="text-muted">
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 project-card" style="background:#082b73;
+                    border:1px solid #0d6efd;border-radius:12px;overflow:hidden;">
+                            <img src="./img/html.png" class="card-img-top" style="height:200px; object-fit:cover;"
+                                alt="HTML Project">
+                            <div class="card-body d-flex flex-column" style="color:white;">
+                                <h4 class="fw-bold">
+                                    HTML Project
+                                </h4>
+                                <p style="color:#e2e8f0;">
                                     Responsive web pages created using pure HTML.
                                 </p>
-                                <div class="d-flex justify-content-center mt-4">
-                                    <a href="./HTML/index.html" class="btn btn-primary">
+                                <div class="mt-auto text-center">
+                                    <a href="./HTML/index.html" class="btn" style="background:#0dcaf0;
+                                color:white;border-radius:20px;">
                                         View Projects
                                     </a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="card">
-                            <img src="./img/css.png" class="card-img-top" style="height: 200px;" alt="CSS Project">
-                            <div class="card-body">
-                                <h4 class="fw-bold">CSS Project</h4>
-                                <p class="text-muted">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 project-card" style="background:#082b73;
+                    border:1px solid #0d6efd;border-radius:12px; overflow:hidden;">
+                            <img src="./img/css.png" class="card-img-top" style="height:200px; object-fit:cover;"
+                                alt="CSS Project">
+                            <div class="card-body d-flex flex-column" style="color:white;">
+                                <h4 class="fw-bold">
+                                    CSS Project
+                                </h4>
+                                <p style="color:#e2e8f0;">
                                     Modern website designs and animations using CSS.
                                 </p>
-                                <div class="d-flex justify-content-center mt-4">
-                                    <a href="./css/index.html" class="btn btn-primary">
+                                <div class="mt-auto text-center">
+                                    <a href="./css/index.html" class="btn" style="background:#0dcaf0;
+                                color:white;border-radius:20px;">
                                         View Projects
                                     </a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="card">
-                            <img src="./img/bootstrap.png" class="card-img-top" style="height: 200px;"
+                                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 project-card" style="background:#082b73;
+                    border:1px solid #0d6efd;border-radius:12px;overflow:hidden;">
+                            <img src="./img/bootstrap.png" class="card-img-top" style="height:200px; object-fit:cover;"
                                 alt="Bootstrap Project">
-                            <div class="card-body">
-                                <h4 class="fw-bold">Bootstrap Project</h4>
-                                <p class="text-muted">
+                            <div class="card-body d-flex flex-column" style="color:white;">
+                                <h4 class="fw-bold">
+                                    Bootstrap Project
+                                </h4>
+                                <p style="color:#e2e8f0;">
                                     Responsive layouts and components using Bootstrap.
                                 </p>
-                                <div class="d-flex justify-content-center mt-4">
-                                    <a href="./Bootstrap/index.html" class="btn btn-primary">
+                                <div class="mt-auto text-center">
+                                    <a href="./Bootstrap/index.html" class="btn" style="background:#0dcaf0;
+                                color:white;
+                                border-radius:20px;">
                                         View Projects
                                     </a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="card">
-                            <img src="./img/clang.png" class="card-img-top" style="height: 200px;"
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 project-card" style="background:#082b73;
+                    border:1px solid #0d6efd;
+                    border-radius:12px;
+                    overflow:hidden;">
+                            <img src="./img/clang.png" class="card-img-top" style="height:200px; object-fit:cover;"
                                 alt="C Language Project">
-                            <div class="card-body">
-                                <h4 class="fw-bold">C Language Project</h4>
-                                <p class="text-muted">
+                            <div class="card-body d-flex flex-column" style="color:white;">
+                                <h4 class="fw-bold">
+                                    C Language Project
+                                </h4>
+                                <p style="color:#e2e8f0;">
                                     Programs based on loops, arrays, functions and patterns.
                                 </p>
-                                <div class="d-flex justify-content-center mt-4">
-                                    <a href="https://lipsamathukiya.github.io/project_clang/" class="btn btn-primary">
+                                <div class="mt-auto text-center">
+                                    <a href="https://lipsamathukiya.github.io/project_clang/" class="btn" style="background:#0dcaf0;
+                                color:white;
+                                border-radius:20px;">
+                                        View Projects
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 project-card" style="background:#082b73;
+                    border:1px solid #0d6efd;
+                    border-radius:12px;
+                    overflow:hidden;">
+                            <img src="./img/c++.png" class="card-img-top" style="height:200px; object-fit:cover;"
+                                alt="C++ Programming Project">
+                            <div class="card-body d-flex flex-column" style="color:white;">
+                                <h4 class="fw-bold">
+                                    C++ Programming Projects
+                                </h4>
+                                <p style="color:#e2e8f0;">
+                                    C++ projects focused on OOP concepts,
+                                    programming logic and problem-solving.
+                                </p>
+                                <div class="mt-auto text-center">
+
+                                    <a href="./c++/time/index.html" class="btn" style="background:#0dcaf0;
+                                color:white;
+                                border-radius:20px;">
                                         View Projects
                                     </a>
                                 </div>
@@ -218,86 +588,156 @@
                 </div>
             </div>
         </section>
+        <!--contact-->
         <section id="contact" class="py-5">
             <div class="container">
-                <div class="text-center mb-5 text-info">
-                    <h2 class="fw-bold">Contact Me</h2>
-                    <p>
+                <div class="text-center mb-5 text-white">
+                    <h1 class="fw-bold">
+                        <span class="text-info">Contact</span> Me
+                    </h1>
+                    <p style="color:#d9e2ec;">
                         Feel free to contact me for projects, internships or collaboration.
                     </p>
                 </div>
-                <div class="row">
-                    <!-- Contact Info -->
-                    <div class="col-lg-5 mb-4">
-                        <div class="card  shadow-sm p-4 h-100">
-                            <h4 class="mb-4">Get In Touch</h4>
-                            <p>
-                                <i class="fa-solid fa-user text-dark"></i>
-                                <strong>Name:</strong> Lipsa Mathukiya
-                            </p>
-                            <p>
-                                <i class="fa-solid fa-envelope text-dark"></i>
-                                <strong>Email:</strong> lipsamathukiya@gmail.com
-                            </p>
-                            <p>
-                                <i class="fa-solid fa-phone text-dark"></i>
-                                <strong>Phone:</strong> +91 98794 21915
-                            </p>
-                            <p>
-                                <i class="fa-solid fa-location-dot text-dark"></i>
-                                <strong>Location:</strong> Jetpur, Gujarat, India
-                            </p>
-                            <p>
-                                <i class="fa-brands fa-github text-dark"></i>
-                                <strong>GitHub:</strong>
-                                <a href="https://github.com/lipsamathukiya/" target="_blank">
-                                    GitHub Profile
-                                </a>
-                            </p>
+                <div class="row g-4">
+                    <div class="col-lg-5">
+                        <div class="h-100 p-4 rounded-4" style="background:#0d162b;
+                            border:1px solid #0d6efd;
+                            box-shadow:0 0 15px rgba(13,110,253,0.15);">
 
-                            <p>
-                                <i class="fa-brands fa-linkedin text-dark"></i>
-                                <strong>LinkedIn:</strong>
-                                <a href="https://www.linkedin.com/in/mathukiya-lipsa-187582417/" target="_blank">
-                                    LinkedIn Profile
-                                </a>
+                            <h3 class="fw-bold mb-3" style="color:white;">
+                                Get <span class="text-info">In Touch</span>
+                            </h3>
+                            <p style="color:#d9e2ec; font-size:13px;">
+                                Feel free to contact me for projects, internships
+                                or collaboration.
                             </p>
+                            <div class="d-flex align-items-center mb-3">
+                                <div style="width:38px;height:38px;
+                                    background:#10264a;
+                                    border:1px solid #0d6efd;
+                                    border-radius:50%;
+                                    display:flex;
+                                    align-items:center;
+                                    justify-content:center;">
+                                    <i class="fa-solid fa-user text-info"></i>
+                                </div>
+                                <div class="ms-3">
+                                    <small style="color:#0dcaf0;">Name:</small>
+                                    <div style="color:white;">
+                                        Lipsa Mathukiya
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="d-flex align-items-center mb-3">
+                                <div style="width:38px;height:38px;
+                                    background:#10264a;
+                                    border:1px solid #0d6efd;
+                                    border-radius:50%;
+                                    display:flex;
+                                    align-items:center;
+                                    justify-content:center;">
+                                    <i class="fa-solid fa-envelope text-info"></i>
+                                </div>
+                                <div class="ms-3">
+                                    <small style="color:#0dcaf0;">Email:</small>
+                                    <div style="color:white;">
+                                        lipsamathukiya@gmail.com
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center mb-3">
+                                <div style="width:38px;height:38px;
+                                    background:#10264a;
+                                    border:1px solid #0d6efd;
+                                    border-radius:50%;
+                                    display:flex;
+                                    align-items:center;
+                                    justify-content:center;">
+                                    <i class="fa-solid fa-phone text-info"></i>
+                                </div>
+                                <div class="ms-3">
+                                    <small style="color:#0dcaf0;">Phone:</small>
+                                    <div style="color:white;">
+                                        +91 98794 21915
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="d-flex align-items-center mb-4">
+                                <div style="width:38px;height:38px;
+                                    background:#10264a;
+                                    border:1px solid #0d6efd;
+                                    border-radius:50%;
+                                    display:flex;
+                                    align-items:center;
+                                    justify-content:center;">
+                                    <i class="fa-solid fa-location-dot text-info"></i>
+                                </div>
+                                <div class="ms-3">
+                                    <small style="color:#0dcaf0;">Location:</small>
+                                    <div style="color:white;">
+                                        Jetpur, Gujarat, India
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <!-- Contact Form -->
                     <div class="col-lg-7">
-                        <div class="card  shadow-sm p-4">
+                        <div class="p-4 rounded-4" style="background:#0d162b;
+                            border:1px solid #0d6efd;
+                            box-shadow:0 0 15px rgba(13,110,253,0.15);">
+
                             <form>
                                 <div class="mb-3">
-                                    <label for="exampleFormControlInput1" class="form-label">Name:</label>
-                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                    <label class="form-label fw-bold text-white">
+                                        Name:
+                                    </label>
+                                    <input type="text" class="form-control" placeholder="Enter your name" style="background:#10264a;
+                                          border:1px solid #164b9c;
+                                          color:white;">
                                 </div>
                                 <div class="mb-3">
-                                    <label for="exampleFormControlInput1" class="form-label">Email address:</label>
-                                    <input type="email" class="form-control" id="exampleFormControlInput2">
+                                    <label class="form-label fw-bold text-white">
+                                        Email address:
+                                    </label>
+
+                                    <input type="email" class="form-control" placeholder="Enter your email" style="background:#10264a;
+                                          border:1px solid #164b9c;
+                                          color:white;">
                                 </div>
                                 <div class="mb-3">
-                                    <label for="exampleFormControlInput1" class="form-label">Phone No:</label>
-                                    <input type="tel" class="form-control" id="exampleFormControlInpu31">
+                                    <label class="form-label fw-bold text-white">
+                                        Phone No:
+                                    </label>
+
+                                    <input type="tel" class="form-control" placeholder="Enter your phone number" style="background:#10264a;
+                                          border:1px solid #164b9c;
+                                          color:white;">
                                 </div>
-                                <div class="mb-3">
-                                    <label for="exampleFormControlTextarea1" class="form-label">Your message:</label>
-                                    <textarea class="form-control" id="exampleFormControlTextarea4" rows="3"></textarea>
+                                <div class="mb-4">
+                                    <label class="form-label fw-bold text-white">
+                                        Your message:
+                                    </label>
+                                    <textarea class="form-control" rows="4" placeholder="Write your message..." style="background:#10264a;
+                                             border:1px solid #164b9c;
+                                             color:white;"></textarea>
                                 </div>
-                                <button type="submit" class="btn btn-primary">
-                                    Send Message
-                                </button>
+                                <div class="text-center">
+                                    <button type="submit" class="btn px-5 rounded-pill" style="background:#0d6efd;
+                                           color:white;
+                                           border:none;">
+                                        <i class="fa-solid fa-paper-plane me-2"></i>
+                                        Send Message
+                                    </button>
+                                </div>
                             </form>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <footer class="bg-dark text-white d-flex justify-content-center  align-items-center">
-            <p>Devlop By lipsa mathukiya</p>
-        </footer>
-    </div>
-
 </body>
 
 </html>
