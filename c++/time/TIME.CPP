@@ -1,54 +1,55 @@
-/*Time Converter*/
-#include<iostream.h>
-#include<conio.h>
+/* Time Converter */
+#include<iostream>
+using namespace std;
 
-class timeconverter
+class TimeConverter
 {
-   int hours,minutes,seconds;
+    int hours, minutes, seconds;
 
-     public:
-	 void secondstotime()
-	 {
-	     int total;
+public:
 
-	     cout<<"Enter total seconds: ";
-	     cin>> total;
+    void secondsToTime()
+    {
+        int total;
 
-	     hours=total/3600;
-	     total=total%3600;
+        cout << "Enter total seconds: ";
+        cin >> total;
 
-	     minutes=total/60;
-	     seconds=total%60;
+        hours = total / 3600;
+        total = total % 3600;
 
-	     cout<<"HH:MM:SS ="<< hours << ":" << minutes << ":" << seconds;
-	 }
+        minutes = total / 60;
+        seconds = total % 60;
 
-void timetoseconds()
-{
-   int total;
+        cout << "HH:MM:SS = "
+             << hours << ":" << minutes << ":" << seconds;
+    }
 
-    cout<<"\nEnter Hours:";
-    cin >> hours;
+    void timeToSeconds()
+    {
+        int total;
 
-    cout<<"Enter minutes:";
-    cin >>minutes;
+        cout << "\nEnter Hours: ";
+        cin >> hours;
 
-    cout<<"Enter seconds:";
-    cin >>seconds;
+        cout << "Enter minutes: ";
+        cin >> minutes;
 
-    total=(hours * 3600) +(minutes*60)+ seconds;
+        cout << "Enter seconds: ";
+        cin >> seconds;
 
-    cout<<"total seconds: "<<total;
+        total = (hours * 3600) + (minutes * 60) + seconds;
+
+        cout << "Total seconds: " << total;
     }
 };
 
-void main()
+int main()
 {
-      clrscr();
+    TimeConverter t;
 
-      timeconverter t;
-      t.secondstotime();
-      t.timetoseconds();
+    t.secondsToTime();
+    t.timeToSeconds();
 
-      getch();
+    return 0;
 }
