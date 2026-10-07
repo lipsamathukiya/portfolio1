@@ -7,62 +7,148 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>HTML Projects</title>
+    <title>C++ Projects</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
     <style>
-    .dark-blue {
-        background-color: #0B1F3A;
-    }
+        body {
+            background-color: #0f172a;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
 
-    .btn-dark-blue {
-        background-color: #0B1F3A;
-        border-color: #0B1F3A;
-        color: white;
-    }
+        .project-section {
+            padding: 50px 0;
+        }
 
-    .btn-dark-blue:hover {
-        background-color: #fcfcfc;
-        border-color: #163B68;
-    }
-</style>
+        .section-title {
+            text-align: center;
+            font-size: 40px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .section-title span {
+            color: #00d9ff;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: #cbd5e1;
+            margin-bottom: 45px;
+        }
+
+        .project-card {
+            background-color: #111c32;
+            border: 1px solid #0879ff;
+            border-radius: 18px;
+            padding: 30px 20px;
+            text-align: center;
+            height: 100%;
+            transition: 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 25px rgba(0, 121, 255, 0.25);
+        }
+
+        .icon-box {
+            width: 55px;
+            height: 55px;
+            border: 1px solid #0879ff;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 18px;
+            color: #00d9ff;
+            font-size: 27px;
+            background-color: #0b1930;
+        }
+
+        .project-title {
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .project-description {
+            color: #cbd5e1;
+            font-size: 14px;
+            min-height: 45px;
+            margin-bottom: 20px;
+        }
+
+        .btn-custom {
+            background-color: #0879ff;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            padding: 9px 22px;
+            font-size: 14px;
+        }
+
+        .btn-custom:hover {
+            background-color: #0879ff;
+            color: white;
+            border: none;
+        }
+    </style>
 
 </head>
-<body class="d-flex flex-column">
-    <header>
-        <nav class="navbar navbar-dark dark-blue py-3">
-            <div class="container d-flex justify-content-center align-items-center">
-                <h2 class="text-white mb-0">
-                    C++ Projects
-                </h2>
-            </div>
-        </nav>
-    </header>
-    <section class="py-5 flex-grow-1">
+
+<body>
+
+    <section class="project-section">
+
         <div class="container">
+
+            <h1 class="section-title">
+                My <span>C++ Projects</span>
+            </h1>
+
+            <p class="section-subtitle">
+                Some projects created using C++ programming.
+            </p>
+
             <div class="row g-4">
+
                 <div class="col-lg-6 col-md-6">
-                    <div class="card h-100 shadow-sm">
-                        <div class="card-body text-center p-4">
-                            <h5 class="card-title fw-bold">
-                                Project 1
-                            </h5>
-                            <p class="card-text">
-                                This is my first C++ program.
-                            </p>
-                            <a href="./time/index.html" class="btn btn-dark-blue">
-                                View Project
-                            </a>
+
+                    <div class="project-card">
+
+                        <div class="icon-box">
+                            <i class="fa-solid fa-clock"></i>
                         </div>
+
+                        <h5 class="project-title">
+                            Project 1
+                        </h5>
+
+                        <p class="project-description">
+                            This is my first C++ program.
+                        </p>
+
+                        <a href="./time/index.html" class="btn btn-custom">
+                            View Project
+                        </a>
+
                     </div>
+
                 </div>
-                
+
             </div>
+
         </div>
+
     </section>
+
 </body>
 
 </html>

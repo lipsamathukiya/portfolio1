@@ -24,9 +24,10 @@
         box-shadow: 0 10px 25px rgba(13, 202, 240, 0.4);
     }
 </style>
+
 <body>
     <div class="container-fuild" style="background: #0f172a;">
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top"style="background-color: #0b0f19;">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #0b0f19;">
             <div class="container">
                 <a class="navbar-brand text-info fw-bold fs-3" href="#home">
                     LM
@@ -90,7 +91,7 @@
                         </h1>
 
                         <h2 class="text-info fw-bold">
-                            Full Stack Developer
+                            Web Developer
                         </h2>
 
                         <p class="mt-3 hero-text">
@@ -232,7 +233,7 @@
                             <p style="color:#d9e2ec">Programming & OOP</p>
                         </div>
                     </div>
-                   
+
                 </div>
             </div>
         </section>
@@ -683,50 +684,93 @@
                             border:1px solid #0d6efd;
                             box-shadow:0 0 15px rgba(13,110,253,0.15);">
 
-                            <form>
+                            <form onsubmit="sendMail(event)">
+
                                 <div class="mb-3">
                                     <label class="form-label fw-bold text-white">
                                         Name:
                                     </label>
-                                    <input type="text" class="form-control" placeholder="Enter your name" style="background:#10264a;
-                                          border:1px solid #164b9c;
-                                          color:white;">
+
+                                    <input type="text" id="name" class="form-control" placeholder="Enter your name"
+                                        required style="background:#10264a;
+                      border:1px solid #164b9c;
+                      color:white;">
                                 </div>
+
                                 <div class="mb-3">
                                     <label class="form-label fw-bold text-white">
                                         Email address:
                                     </label>
 
-                                    <input type="email" class="form-control" placeholder="Enter your email" style="background:#10264a;
-                                          border:1px solid #164b9c;
-                                          color:white;">
+                                    <input type="email" id="email" class="form-control" placeholder="Enter your email"
+                                        required style="background:#10264a;
+                      border:1px solid #164b9c;
+                      color:white;">
                                 </div>
+
                                 <div class="mb-3">
                                     <label class="form-label fw-bold text-white">
                                         Phone No:
                                     </label>
 
-                                    <input type="tel" class="form-control" placeholder="Enter your phone number" style="background:#10264a;
-                                          border:1px solid #164b9c;
-                                          color:white;">
+                                    <input type="tel" id="phone" class="form-control"
+                                        placeholder="Enter your phone number" required style="background:#10264a;
+                      border:1px solid #164b9c;
+                      color:white;">
                                 </div>
+
                                 <div class="mb-4">
                                     <label class="form-label fw-bold text-white">
                                         Your message:
                                     </label>
-                                    <textarea class="form-control" rows="4" placeholder="Write your message..." style="background:#10264a;
-                                             border:1px solid #164b9c;
-                                             color:white;"></textarea>
+
+                                    <textarea id="message" class="form-control" rows="4"
+                                        placeholder="Write your message..." required style="background:#10264a;
+                         border:1px solid #164b9c;
+                         color:white;"></textarea>
                                 </div>
+
                                 <div class="text-center">
+
                                     <button type="submit" class="btn px-5 rounded-pill" style="background:#0d6efd;
-                                           color:white;
-                                           border:none;">
+                       color:white;
+                       border:none;">
+
                                         <i class="fa-solid fa-paper-plane me-2"></i>
                                         Send Message
+
                                     </button>
+
                                 </div>
+
                             </form>
+
+                            <script>
+
+                                function sendMail(event) {
+
+                                    event.preventDefault();
+
+                                    let name = document.getElementById("name").value;
+                                    let email = document.getElementById("email").value;
+                                    let phone = document.getElementById("phone").value;
+                                    let message = document.getElementById("message").value;
+
+                                    let subject = "New Contact Message";
+
+                                    let body =
+                                        "Name: " + name + "\n" +
+                                        "Email: " + email + "\n" +
+                                        "Phone: " + phone + "\n\n" +
+                                        "Message:\n" + message;
+
+                                    window.location.href =
+                                        "mailto:lipsamathukiya@gmail.com" +
+                                        "?subject=" + encodeURIComponent(subject) +
+                                        "&body=" + encodeURIComponent(body);
+                                }
+
+                            </script>
                         </div>
                     </div>
                 </div>

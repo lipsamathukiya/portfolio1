@@ -7,361 +7,715 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Css Projects</title>
+    <title>CSS Projects</title>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+
+        body {
+            background-color: #0f172a;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        .project-section {
+            padding: 50px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 40px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .section-title span {
+            color: #00d9ff;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: #cbd5e1;
+            margin-bottom: 45px;
+        }
+
+        .project-card {
+            background-color: #111c32;
+            border: 1px solid #0879ff;
+            border-radius: 18px;
+            padding: 30px 20px;
+            text-align: center;
+            height: 100%;
+            transition: 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 25px rgba(0, 121, 255, 0.25);
+        }
+
+        .icon-box {
+            width: 55px;
+            height: 55px;
+            border: 1px solid #0879ff;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 18px;
+            color: #00d9ff;
+            font-size: 27px;
+            background-color: #0b1930;
+        }
+
+        .project-title {
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .project-description {
+            color: #cbd5e1;
+            font-size: 14px;
+            min-height: 45px;
+            margin-bottom: 20px;
+        }
+
+        .btn-custom {
+            background-color: #0879ff;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            padding: 9px 22px;
+            font-size: 14px;
+            text-decoration: none;
+        }
+
+        .btn-custom:hover {
+            background-color: #0879ff;
+            color: white;
+            border: none;
+        }
+
+    </style>
+
 </head>
-<style>
-    .dark-blue {
-        background-color: #0B1F3A;
-    }
 
-    .btn-dark-blue {
-        background-color: #0B1F3A;
-        border-color: #0B1F3A;
-        color: white;
-    }
+<body>
 
-    .btn-dark-blue:hover {
-        background-color: #fcfcfc;
-        border-color: #163B68;
-    }
-</style>
+    <section class="project-section">
 
-<body class="d-flex flex-column">
-    <header>
-        <nav class="navbar navbar-dark dark-blue py-3">
-            <div class="container d-flex justify-content-center align-items-center">
-                <h2 class="text-white">
-                    Css project
-                </h2>
-            </div>
-        </nav>
-    </header>
-    <section class="py-5 flex-grow-1">
         <div class="container">
+
+            <h1 class="section-title">
+                My <span>CSS Projects</span>
+            </h1>
+
+            <p class="section-subtitle">
+                Some projects created using HTML and CSS.
+            </p>
+
             <div class="row g-4">
+
+                <!-- Project 1 -->
                 <div class="col-lg-6 col-md-6">
-                    <div class="card h-100 shadow-sm">
-                        <div class="card-body text-center p-4">
-                            <h5 class="card-title fw-bold">
-                                Project 1
-                            </h5>
-                            <p class="card-text text-muted">
-                                This is my first css project.
-                            </p>
-                            <a href="lec-5/index.html" class="btn btn-dark-blue">
-                                View Project
-                            </a>
+                    <div class="project-card">
+
+                        <div class="icon-box">
+                            <i class="fa-solid fa-code"></i>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                    <div class="card h-100 shadow-sm">
-                        <div class="card-body text-center p-4">
-                            <h5 class="card-title fw-bold">
-                                Project 2
-                            </h5>
-                            <p class="card-text text-muted">
-                                This is my second Css project.
-                            </p>
-                            <a href="lec-6/card1.html" class="btn btn-dark-blue">
-                                View Project
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                    <div class="card h-100 shadow-sm">
-                        <div class="card-body text-center p-4">
-                            <h5 class="card-title fw-bold">
-                                Project 3
-                            </h5>
-                            <p class="card-text text-muted">
-                                This is my third Css project.
-                            </p>
-                            <a href="lec-6/card2.html" class="btn btn-dark-blue">
-                                View Project
-                            </a>
-                        </div>
+
+                        <h5 class="project-title">Project 1</h5>
+
+                        <p class="project-description">
+                            This is my first CSS project.
+                        </p>
+
+                        <a href="lec-5/index.html" class="btn-custom">
+                            View Project
+                        </a>
+
                     </div>
                 </div>
 
+                <!-- Project 2 -->
                 <div class="col-lg-6 col-md-6">
-                    <div class="card h-100 shadow-sm">
-                        <div class="card-body text-center p-4">
-                            <h5 class="card-title fw-bold">
-                                Project 4
-                            </h5>
-                            <p class="card-text text-muted">
-                                This is my four Css project.
-                            </p>
-                            <a href="lec-6/card3.html" class="btn btn-dark-blue">
-                                View Project
-                            </a>
+                    <div class="project-card">
+
+                        <div class="icon-box">
+                            <i class="fa-solid fa-layer-group"></i>
                         </div>
+
+                        <h5 class="project-title">Project 2</h5>
+
+                        <p class="project-description">
+                            This is my second CSS project.
+                        </p>
+
+                        <a href="lec-6/card1.html" class="btn-custom">
+                            View Project
+                        </a>
+
                     </div>
                 </div>
 
+                <!-- Project 3 -->
                 <div class="col-lg-6 col-md-6">
-                    <div class="card h-100 shadow-sm">
-                        <div class="card-body text-center p-4">
-                            <h5 class="card-title fw-bold">
-                                Project 5
-                            </h5>
-                            <p class="card-text text-muted">
-                                This is my fifve css project.
-                            </p>
-                            <a href="lec-7/index.html" class="btn btn-dark-blue">
-                                View Project
-                            </a>
+                    <div class="project-card">
+
+                        <div class="icon-box">
+                            <i class="fa-solid fa-id-card"></i>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                    <div class="card h-100 shadow-sm">
-                        <div class="card-body text-center p-4">
-                            <h5 class="card-title fw-bold">
-                                Project 6
-                            </h5>
-                            <p class="card-text text-muted">
-                                This is my six css project.
-                            </p>
-                            <a href="lec-8/Article .html" class="btn btn-dark-blue">
-                                View Project
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                    <div class="card h-100 shadow-sm">
-                        <div class="card-body text-center p-4">
-                            <h5 class="card-title fw-bold">
-                                Project 7
-                            </h5>
-                            <p class="card-text text-muted">
-                                This is my seven css project.
-                            </p>
-                            <a href="lec-8/card.html" class="btn btn-dark-blue">
-                                View Project
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                    <div class="card h-100 shadow-sm">
-                        <div class="card-body text-center p-4">
-                            <h5 class="card-title fw-bold">
-                                Project 8
-                            </h5>
-                            <p class="card-text text-muted">
-                                This is my eight css project.
-                            </p>
-                            <a href="lec-9/blog.html" class="btn btn-dark-blue">
-                                View Project
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                    <div class="card h-100 shadow-sm">
-                        <div class="card-body text-center p-4">
-                            <h5 class="card-title fw-bold">
-                                Project 9
-                            </h5>
-                            <p class="card-text text-muted">
-                                This is my nine css project.
-                            </p>
-                            <a href="lec-9/sticky.html" class="btn btn-dark-blue">
-                                View Project
-                            </a>
-                        </div>
+
+                        <h5 class="project-title">Project 3</h5>
+
+                        <p class="project-description">
+                            This is my third CSS project.
+                        </p>
+
+                        <a href="lec-6/card2.html" class="btn-custom">
+                            View Project
+                        </a>
+
                     </div>
                 </div>
 
+                <!-- Project 4 -->
                 <div class="col-lg-6 col-md-6">
-                    <div class="card h-100 shadow-sm">
-                        <div class="card-body text-center p-4">
-                            <h5 class="card-title fw-bold">
-                                Project 10
-                            </h5>
-                            <p class="card-text text-muted">
-                                This is my ten css project.
-                            </p>
-                            <a href="lec-10/index.html" class="btn btn-dark-blue">
-                                View Project
-                            </a>
+                    <div class="project-card">
+
+                        <div class="icon-box">
+                            <i class="fa-solid fa-table-cells"></i>
                         </div>
+
+                        <h5 class="project-title">Project 4</h5>
+
+                        <p class="project-description">
+                            This is my fourth CSS project.
+                        </p>
+
+                        <a href="lec-6/card3.html" class="btn-custom">
+                            View Project
+                        </a>
+
                     </div>
                 </div>
 
+                <!-- Project 5 -->
                 <div class="col-lg-6 col-md-6">
-                    <div class="card h-100 shadow-sm">
-                        <div class="card-body text-center p-4">
-                            <h5 class="card-title fw-bold">
-                                Project 11
-                            </h5>
-                            <p class="card-text text-muted">
-                                This is my eleven css project.
-                            </p>
-                            <a href="lec-11/index.html" class="btn btn-dark-blue">
-                                View Project
-                            </a>
+                    <div class="project-card">
+
+                        <div class="icon-box">
+                            <i class="fa-solid fa-palette"></i>
                         </div>
+
+                        <h5 class="project-title">Project 5</h5>
+
+                        <p class="project-description">
+                            This is my fifth CSS project.
+                        </p>
+
+                        <a href="lec-7/index.html" class="btn-custom">
+                            View Project
+                        </a>
+
                     </div>
                 </div>
 
+                <!-- Project 6 -->
                 <div class="col-lg-6 col-md-6">
-                    <div class="card h-100 shadow-sm">
-                        <div class="card-body text-center p-4">
-                            <h5 class="card-title fw-bold">
-                                Project 12
-                            </h5>
-                            <p class="card-text text-muted">
-                                This is my twelve css project.
-                            </p>
-                            <a href="lec-12/index.html" class="btn btn-dark-blue">
-                                View Project
-                            </a>
+                    <div class="project-card">
+
+                        <div class="icon-box">
+                            <i class="fa-solid fa-newspaper"></i>
                         </div>
+
+                        <h5 class="project-title">Project 6</h5>
+
+                        <p class="project-description">
+                            This is my sixth CSS project.
+                        </p>
+
+                        <a href="lec-8/Article .html" class="btn-custom">
+                            View Project
+                        </a>
+
                     </div>
                 </div>
+
+                <!-- Project 7 -->
                 <div class="col-lg-6 col-md-6">
-                    <div class="card h-100 shadow-sm">
-                        <div class="card-body text-center p-4">
-                            <h5 class="card-title fw-bold">
-                                Project 13
-                            </h5>
-                            <p class="card-text text-muted">
-                                This is my thirteen css project.
-                            </p>
-                            <a href="lec-13/index.html" class="btn btn-dark-blue">
-                                View Project
-                            </a>
+                    <div class="project-card">
+
+                        <div class="icon-box">
+                            <i class="fa-solid fa-credit-card"></i>
                         </div>
+
+                        <h5 class="project-title">Project 7</h5>
+
+                        <p class="project-description">
+                            This is my seventh CSS project.
+                        </p>
+
+                        <a href="lec-8/card.html" class="btn-custom">
+                            View Project
+                        </a>
+
                     </div>
                 </div>
-                 <div class="col-lg-6 col-md-6">
-                    <div class="card h-100 shadow-sm">
-                        <div class="card-body text-center p-4">
-                            <h5 class="card-title fw-bold">
-                                Project 14
-                            </h5>
-                            <p class="card-text text-muted">
-                                This is my fourteen css project.
-                            </p>
-                            <a href="lec-14/index.html" class="btn btn-dark-blue">
-                                View Project
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                 <div class="col-lg-6 col-md-6">
-                    <div class="card h-100 shadow-sm">
-                        <div class="card-body text-center p-4">
-                            <h5 class="card-title fw-bold">
-                                Project 15
-                            </h5>
-                            <p class="card-text text-muted">
-                                This is my fifteen css project.
-                            </p>
-                            <a href="lec-15/index.html" class="btn btn-dark-blue">
-                                View Project
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                 <div class="col-lg-6 col-md-6">
-                    <div class="card h-100 shadow-sm">
-                        <div class="card-body text-center p-4">
-                            <h5 class="card-title fw-bold">
-                                Project 16
-                            </h5>
-                            <p class="card-text text-muted">
-                                This is my sixteen css project.
-                            </p>
-                            <a href="lec-16/index.html" class="btn btn-dark-blue">
-                                View Project
-                            </a>
-                        </div>
-                    </div>
-                </div>
+
+                <!-- Project 8 -->
                 <div class="col-lg-6 col-md-6">
-                    <div class="card h-100 shadow-sm">
-                        <div class="card-body text-center p-4">
-                            <h5 class="card-title fw-bold">
-                                Project 17
-                            </h5>
-                            <p class="card-text text-muted">
-                                This is my seventeen css project.
-                            </p>
-                            <a href="fabric/index.html" class="btn btn-dark-blue">
-                                View Project
-                            </a>
+                    <div class="project-card">
+
+                        <div class="icon-box">
+                            <i class="fa-solid fa-blog"></i>
                         </div>
-                    </div>
-                </div><div class="col-lg-6 col-md-6">
-                    <div class="card h-100 shadow-sm">
-                        <div class="card-body text-center p-4">
-                            <h5 class="card-title fw-bold">
-                                Project 18
-                            </h5>
-                            <p class="card-text text-muted">
-                                This is my eighteen css project.
-                            </p>
-                            <a href="freshcart/index.html" class="btn btn-dark-blue">
-                                View Project
-                            </a>
-                        </div>
-                    </div>
-                </div><div class="col-lg-6 col-md-6">
-                    <div class="card h-100 shadow-sm">
-                        <div class="card-body text-center p-4">
-                            <h5 class="card-title fw-bold">
-                                Project 19
-                            </h5>
-                            <p class="card-text text-muted">
-                                This is my nineteen css project.
-                            </p>
-                            <a href="jewellery/index.html" class="btn btn-dark-blue">
-                                View Project
-                            </a>
-                        </div>
-                    </div>
-                </div><div class="col-lg-6 col-md-6">
-                    <div class="card h-100 shadow-sm">
-                        <div class="card-body text-center p-4">
-                            <h5 class="card-title fw-bold">
-                                Project 20
-                            </h5>
-                            <p class="card-text text-muted">
-                                This is my twenty css project.
-                            </p>
-                            <a href="neil art/index.html" class="btn btn-dark-blue">
-                                View Project
-                            </a>
-                        </div>
+
+                        <h5 class="project-title">Project 8</h5>
+
+                        <p class="project-description">
+                            This is my eighth CSS project.
+                        </p>
+
+                        <a href="lec-9/blog.html" class="btn-custom">
+                            View Project
+                        </a>
+
                     </div>
                 </div>
+
+                <!-- Project 9 -->
                 <div class="col-lg-6 col-md-6">
-                    <div class="card h-100 shadow-sm">
-                        <div class="card-body text-center p-4">
-                            <h5 class="card-title fw-bold">
-                                Project 21
-                            </h5>
-                            <p class="card-text text-muted">
-                                This is my twentyone css project.
-                            </p>
-                            <a href="netflix/index.html" class="btn btn-dark-blue">
-                                View Project
-                            </a>
+                    <div class="project-card">
+
+                        <div class="icon-box">
+                            <i class="fa-solid fa-thumbtack"></i>
                         </div>
+
+                        <h5 class="project-title">Project 9</h5>
+
+                        <p class="project-description">
+                            This is my ninth CSS project.
+                        </p>
+
+                        <a href="lec-9/sticky.html" class="btn-custom">
+                            View Project
+                        </a>
+
                     </div>
                 </div>
-                 
+
+                <!-- Project 10 -->
+                <div class="col-lg-6 col-md-6">
+                    <div class="project-card">
+
+                        <div class="icon-box">
+                            <i class="fa-solid fa-desktop"></i>
+                        </div>
+
+                        <h5 class="project-title">Project 10</h5>
+
+                        <p class="project-description">
+                            This is my tenth CSS project.
+                        </p>
+
+                        <a href="lec-10/index.html" class="btn-custom">
+                            View Project
+                        </a>
+
+                    </div>
+                </div>
+
+                <!-- Project 11 -->
+                <div class="col-lg-6 col-md-6">
+                    <div class="project-card">
+
+                        <div class="icon-box">
+                            <i class="fa-solid fa-window-maximize"></i>
+                        </div>
+
+                        <h5 class="project-title">Project 11</h5>
+
+                        <p class="project-description">
+                            This is my eleventh CSS project.
+                        </p>
+
+                        <a href="lec-11/index.html" class="btn-custom">
+                            View Project
+                        </a>
+
+                    </div>
+                </div>
+
+                <!-- Project 12 -->
+                <div class="col-lg-6 col-md-6">
+                    <div class="project-card">
+
+                        <div class="icon-box">
+                            <i class="fa-solid fa-code-branch"></i>
+                        </div>
+
+                        <h5 class="project-title">Project 12</h5>
+
+                        <p class="project-description">
+                            This is my twelfth CSS project.
+                        </p>
+
+                        <a href="lec-12/index.html" class="btn-custom">
+                            View Project
+                        </a>
+
+                    </div>
+                </div>
+
+                <!-- Project 13 -->
+                <div class="col-lg-6 col-md-6">
+                    <div class="project-card">
+
+                        <div class="icon-box">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </div>
+
+                        <h5 class="project-title">Project 13</h5>
+
+                        <p class="project-description">
+                            This is my thirteenth CSS project.
+                        </p>
+
+                        <a href="lec-13/index.html" class="btn-custom">
+                            View Project
+                        </a>
+
+                    </div>
+                </div>
+
+                <!-- Project 14 -->
+                <div class="col-lg-6 col-md-6">
+                    <div class="project-card">
+
+                        <div class="icon-box">
+                            <i class="fa-solid fa-window-restore"></i>
+                        </div>
+
+                        <h5 class="project-title">Project 14</h5>
+
+                        <p class="project-description">
+                            This is my fourteenth CSS project.
+                        </p>
+
+                        <a href="lec-14/index.html" class="btn-custom">
+                            View Project
+                        </a>
+
+                    </div>
+                </div>
+
+                <!-- Project 15 -->
+                <div class="col-lg-6 col-md-6">
+                    <div class="project-card">
+
+                        <div class="icon-box">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        </div>
+
+                        <h5 class="project-title">Project 15</h5>
+
+                        <p class="project-description">
+                            This is my fifteenth CSS project.
+                        </p>
+
+                        <a href="lec-15/index.html" class="btn-custom">
+                            View Project
+                        </a>
+
+                    </div>
+                </div>
+
+                <!-- Project 16 -->
+                <div class="col-lg-6 col-md-6">
+                    <div class="project-card">
+
+                        <div class="icon-box">
+                            <i class="fa-solid fa-mobile-screen"></i>
+                        </div>
+
+                        <h5 class="project-title">Project 16</h5>
+
+                        <p class="project-description">
+                            This is my sixteenth CSS project.
+                        </p>
+
+                        <a href="lec-16/index.html" class="btn-custom">
+                            View Project
+                        </a>
+
+                    </div>
+                </div>
+
+                <!-- Project 17 -->
+                <div class="col-lg-6 col-md-6">
+                    <div class="project-card">
+
+                        <div class="icon-box">
+                            <i class="fa-solid fa-shirt"></i>
+                        </div>
+
+                        <h5 class="project-title">Project 17</h5>
+
+                        <p class="project-description">
+                            This is my seventeenth CSS project.
+                        </p>
+
+                        <a href="fabric/index.html" class="btn-custom">
+                            View Project
+                        </a>
+
+                    </div>
+                </div>
+
+                <!-- Project 18 -->
+                <div class="col-lg-6 col-md-6">
+                    <div class="project-card">
+
+                        <div class="icon-box">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+
+                        <h5 class="project-title">Project 18</h5>
+
+                        <p class="project-description">
+                            This is my eighteenth CSS project.
+                        </p>
+
+                        <a href="freshcart/index.html" class="btn-custom">
+                            View Project
+                        </a>
+
+                    </div>
+                </div>
+
+                <!-- Project 19 -->
+                <div class="col-lg-6 col-md-6">
+                    <div class="project-card">
+
+                        <div class="icon-box">
+                            <i class="fa-solid fa-paintbrush"></i>
+                        </div>
+
+                        <h5 class="project-title">Project 19</h5>
+
+                        <p class="project-description">
+                            This is my nineteenth CSS project.
+                        </p>
+
+                        <a href="neil art/index.html" class="btn-custom">
+                            View Project
+                        </a>
+
+                    </div>
+                </div>
+
+                <!-- Project 20 -->
+                <div class="col-lg-6 col-md-6">
+                    <div class="project-card">
+
+                        <div class="icon-box">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+
+                        <h5 class="project-title">Project 20</h5>
+
+                        <p class="project-description">
+                            This is my twentieth CSS project.
+                        </p>
+
+                        <a href="netflix/index.html" class="btn-custom">
+                            View Project
+                        </a>
+
+                    </div>
+                </div>
+
+                <!-- Project 21 -->
+                <div class="col-lg-6 col-md-6">
+                    <div class="project-card">
+
+                        <div class="icon-box">
+                            <i class="fa-solid fa-building"></i>
+                        </div>
+
+                        <h5 class="project-title">Project 21</h5>
+
+                        <p class="project-description">
+                            This is my twenty-first CSS project.
+                        </p>
+
+                        <a href="./red&white/index.html" class="btn-custom">
+                            View Project
+                        </a>
+
+                    </div>
+                </div>
+
+                <!-- Project 22 -->
+                <div class="col-lg-6 col-md-6">
+                    <div class="project-card">
+
+                        <div class="icon-box">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+
+                        <h5 class="project-title">Project 22</h5>
+
+                        <p class="project-description">
+                            This is my twenty-second CSS project.
+                        </p>
+
+                        <a href="./portfolio/index.html" class="btn-custom">
+                            View Project
+                        </a>
+
+                    </div>
+                </div>
+
+                <!-- Project 23 -->
+                <div class="col-lg-6 col-md-6">
+                    <div class="project-card">
+
+                        <div class="icon-box">
+                            <i class="fa-solid fa-tag"></i>
+                        </div>
+
+                        <h5 class="project-title">Project 23</h5>
+
+                        <p class="project-description">
+                            This is my twenty-third CSS project.
+                        </p>
+
+                        <a href="./brand name/index.html" class="btn-custom">
+                            View Project
+                        </a>
+
+                    </div>
+                </div>
+
+                <!-- Project 24 -->
+                <div class="col-lg-6 col-md-6">
+                    <div class="project-card">
+
+                        <div class="icon-box">
+                            <i class="fa-solid fa-mug-hot"></i>
+                        </div>
+
+                        <h5 class="project-title">Project 24</h5>
+
+                        <p class="project-description">
+                            This is my twenty-fourth CSS project.
+                        </p>
+
+                        <a href="./coffee1/index.html" class="btn-custom">
+                            View Project
+                        </a>
+
+                    </div>
+                </div>
+
+                <!-- Project 25 -->
+                <div class="col-lg-6 col-md-6">
+                    <div class="project-card">
+
+                        <div class="icon-box">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+
+                        <h5 class="project-title">Project 25</h5>
+
+                        <p class="project-description">
+                            This is my twenty-fifth CSS project.
+                        </p>
+
+                        <a href="./crochet/index.html" class="btn-custom">
+                            View Project
+                        </a>
+
+                    </div>
+                </div>
+
+                <!-- Project 26 -->
+                <div class="col-lg-6 col-md-6">
+                    <div class="project-card">
+
+                        <div class="icon-box">
+                            <i class="fa-brands fa-bitcoin"></i>
+                        </div>
+
+                        <h5 class="project-title">Project 26</h5>
+
+                        <p class="project-description">
+                            This is my twenty-sixth CSS project.
+                        </p>
+
+                        <a href="./crypto/index.html" class="btn-custom">
+                            View Project
+                        </a>
+
+                    </div>
+                </div>
+
+                <!-- Project 27 -->
+                <div class="col-lg-6 col-md-6">
+                    <div class="project-card">
+
+                        <div class="icon-box">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </div>
+
+                        <h5 class="project-title">Project 27</h5>
+
+                        <p class="project-description">
+                            This is my twenty-seventh CSS project.
+                        </p>
+
+                        <a href="./supermarket/index.html" class="btn-custom">
+                            View Project
+                        </a>
+
+                    </div>
+                </div>
+
+                <!-- Project 28 -->
+                <div class="col-lg-6 col-md-6">
+                    <div class="project-card">
+
+                        <div class="icon-box">
+                            <i class="fa-solid fa-house"></i>
+                        </div>
+
+                        <h5 class="project-title">Project 28</h5>
+
+                        <p class="project-description">
+                            This is my twenty-eighth CSS project.
+                        </p>
+
+                        <a href="./prime home/index.html" class="btn-custom">
+                            View Project
+                        </a>
+
+                    </div>
+                </div>
+
             </div>
+
         </div>
+
     </section>
+
 </body>
 
 </html>
