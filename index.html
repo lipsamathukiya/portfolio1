@@ -500,7 +500,7 @@
                                     Modern website designs and animations using CSS.
                                 </p>
                                 <div class="mt-auto text-center">
-                                    <a href="./css/index.html"  target="_blank"class="btn" style="background:#0dcaf0;
+                                    <a href="./css/index.html" target="_blank" class="btn" style="background:#0dcaf0;
                                 color:white;border-radius:20px;">
                                         View Projects
                                     </a>
@@ -521,7 +521,7 @@
                                     Responsive layouts and components using Bootstrap.
                                 </p>
                                 <div class="mt-auto text-center">
-                                    <a href="./Bootstrap/index.html"  target="_blank"class="btn" style="background:#0dcaf0;
+                                    <a href="./Bootstrap/index.html" target="_blank" class="btn" style="background:#0dcaf0;
                                 color:white;
                                 border-radius:20px;">
                                         View Projects
@@ -535,7 +535,7 @@
                     border:1px solid #0d6efd;
                     border-radius:12px;
                     overflow:hidden;">
-                            <img src="./img/clang.png"  class="card-img-top" style="height:200px; object-fit:cover;"
+                            <img src="./img/clang.png" class="card-img-top" style="height:200px; object-fit:cover;"
                                 alt="C Language Project">
                             <div class="card-body d-flex flex-column" style="color:white;">
                                 <h4 class="fw-bold">
@@ -545,7 +545,8 @@
                                     Programs based on loops, arrays, functions and patterns.
                                 </p>
                                 <div class="mt-auto text-center">
-                                    <a href="https://lipsamathukiya.github.io/project_clang/"  target="_blank"class="btn" style="background:#0dcaf0;
+                                    <a href="https://lipsamathukiya.github.io/project_clang/" target="_blank"
+                                        class="btn" style="background:#0dcaf0;
                                 color:white;
                                 border-radius:20px;">
                                         View Projects
@@ -571,7 +572,7 @@
                                 </p>
                                 <div class="mt-auto text-center">
 
-                                    <a href="./c++/index.html"  target="_blank"class="btn" style="background:#0dcaf0;
+                                    <a href="./c++/index.html" target="_blank" class="btn" style="background:#0dcaf0;
                                 color:white;
                                 border-radius:20px;">
                                         View Projects
@@ -679,62 +680,80 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-7">
-                        <div class="p-4 rounded-4" style="background:#0d162b;
-                            border:1px solid #0d6efd;
-                            box-shadow:0 0 15px rgba(13,110,253,0.15);">
 
-                            <form onsubmit="sendMail(event)">
+                    <div class="col-lg-7">
+
+                        <div class="p-4 rounded-4" style="background:#0d162b;
+        border:1px solid #0d6efd;
+        box-shadow:0 0 15px rgba(13,110,253,0.15);">
+
+                            <form action="https://api.web3forms.com/submit" method="POST">
+
+                                <input type="hidden" name="access_key" value="a27197dc-a2a1-4b29-852d-3e30d8d14587">
+
+
+                                <input type="hidden" name="subject" value="New Contact Message">
+
+
+                                <input type="hidden" name="from_name" value="Portfolio Contact Form">
+
+
 
                                 <div class="mb-3">
+
                                     <label class="form-label fw-bold text-white">
                                         Name:
                                     </label>
 
-                                    <input type="text" id="name" class="form-control" placeholder="Enter your name"
+                                    <input type="text" name="name" class="form-control" placeholder="Enter your name"
                                         required style="background:#10264a;
-                      border:1px solid #164b9c;
-                      color:white;">
+                    border:1px solid #164b9c;
+                    color:white;">
+
                                 </div>
 
                                 <div class="mb-3">
+
                                     <label class="form-label fw-bold text-white">
                                         Email address:
                                     </label>
 
-                                    <input type="email" id="email" class="form-control" placeholder="Enter your email"
+                                    <input type="email" name="email" class="form-control" placeholder="Enter your email"
                                         required style="background:#10264a;
-                      border:1px solid #164b9c;
-                      color:white;">
-                                </div>
+                    border:1px solid #164b9c;
+                    color:white;">
 
+                                </div>
                                 <div class="mb-3">
+
                                     <label class="form-label fw-bold text-white">
                                         Phone No:
                                     </label>
 
-                                    <input type="tel" id="phone" class="form-control"
+                                    <input type="tel" name="phone" class="form-control"
                                         placeholder="Enter your phone number" required style="background:#10264a;
-                      border:1px solid #164b9c;
-                      color:white;">
-                                </div>
+                    border:1px solid #164b9c;
+                    color:white;">
 
+                                </div>
                                 <div class="mb-4">
+
                                     <label class="form-label fw-bold text-white">
                                         Your message:
                                     </label>
 
-                                    <textarea id="message" class="form-control" rows="4"
+                                    <textarea name="message" class="form-control" rows="4"
                                         placeholder="Write your message..." required style="background:#10264a;
-                         border:1px solid #164b9c;
-                         color:white;"></textarea>
+                    border:1px solid #164b9c;
+                    color:white;"></textarea>
+
                                 </div>
 
                                 <div class="text-center">
 
                                     <button type="submit" class="btn px-5 rounded-pill" style="background:#0d6efd;
-                       color:white;
-                       border:none;">
+                    color:white;
+                    border:none;">
 
                                         <i class="fa-solid fa-paper-plane me-2"></i>
                                         Send Message
@@ -745,37 +764,15 @@
 
                             </form>
 
-                            <script>
-
-                                function sendMail(event) {
-
-                                    event.preventDefault();
-
-                                    let name = document.getElementById("name").value;
-                                    let email = document.getElementById("email").value;
-                                    let phone = document.getElementById("phone").value;
-                                    let message = document.getElementById("message").value;
-
-                                    let subject = "New Contact Message";
-
-                                    let body =
-                                        "Name: " + name + "\n" +
-                                        "Email: " + email + "\n" +
-                                        "Phone: " + phone + "\n\n" +
-                                        "Message:\n" + message;
-
-                                    window.location.href =
-                                        "mailto:lipsamathukiya@gmail.com" +
-                                        "?subject=" + encodeURIComponent(subject) +
-                                        "&body=" + encodeURIComponent(body);
-                                }
-
-                            </script>
                         </div>
+
                     </div>
                 </div>
             </div>
-        </section>
+    </div>
+    </div>
+    </div>
+    </section>
 </body>
 
 </html>
