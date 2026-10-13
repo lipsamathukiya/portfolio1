@@ -27,6 +27,7 @@
 
 <body>
     <div class="container-fuild" style="background: #0f172a;">
+
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top"
     style="background-color:#0b0f19; padding:12px 0; z-index:1000;">
@@ -43,7 +44,8 @@
             data-bs-target="#menu"
             aria-controls="menu"
             aria-expanded="false"
-            aria-label="Toggle navigation">
+            aria-label="Toggle navigation"
+            style="box-shadow:none;">
 
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -92,7 +94,6 @@
         <div class="row align-items-center min-vh-100 py-5"
             style="row-gap:30px;">
 
-            <!-- Text -->
             <div class="col-lg-6 col-md-7 col-12 hero-content"
                 style="min-width:0;">
 
@@ -118,7 +119,6 @@
                     user-friendly, and modern web applications.
                 </p>
 
-                <!-- Social Icons -->
                 <div class="d-flex flex-wrap gap-3 mt-4 hero-social"
                     style="align-items:center;">
 
@@ -154,10 +154,10 @@
 
                 </div>
 
-                <!-- Buttons -->
                 <div class="d-flex flex-wrap gap-3 mt-4 hero-buttons">
 
-                    <a href="#projects" class="btn btn-primary rounded-pill"
+                    <a href="#projects"
+                        class="btn btn-primary rounded-pill"
                         style="padding:11px 22px;">
                         View Project
                     </a>
@@ -173,7 +173,6 @@
 
             </div>
 
-            <!-- Image -->
             <div class="col-lg-6 col-md-5 col-12 text-center hero-image">
 
                 <img src="./img/l1.png"
@@ -188,106 +187,6 @@
         </div>
     </div>
 </section>
-
-
-<!-- Responsive CSS -->
-<style>
-    html {
-        scroll-behavior: smooth;
-        scroll-padding-top: 80px;
-    }
-
-    body {
-        margin: 0;
-        overflow-x: hidden;
-    }
-
-    @media (max-width: 767.98px) {
-        #home .row {
-            text-align: center;
-        }
-
-        #home .hero-content {
-            order: 1;
-        }
-
-        #home .hero-image {
-            order: 2;
-        }
-
-        #home .hero-content p {
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        #home .hero-social,
-        #home .hero-buttons {
-            justify-content: center;
-        }
-
-        #home .hero-image img {
-            width: min(75vw, 280px) !important;
-        }
-    }
-
-    @media (max-width: 380px) {
-        #home .hero-buttons {
-            flex-direction: column;
-            align-items: stretch;
-        }
-
-        #home .hero-buttons a {
-            width: 100%;
-        }
-    }
-</style>
-
-
-<!-- Navbar Auto Close Script -->
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-
-        const menu = document.getElementById("menu");
-        const navbar = document.querySelector(".navbar");
-        const toggler = document.querySelector(".navbar-toggler");
-
-        if (!menu || !navbar || !toggler) return;
-
-        const bsMenu = bootstrap.Collapse.getOrCreateInstance(menu, {
-            toggle: false
-        });
-
-        // Link click thay tyare menu bandh
-        menu.querySelectorAll("a").forEach(function (link) {
-            link.addEventListener("click", function () {
-                if (window.innerWidth < 992) {
-                    bsMenu.hide();
-                }
-            });
-        });
-
-        // User scroll kare tyare menu bandh
-        let lastScrollY = window.scrollY;
-
-        window.addEventListener("scroll", function () {
-            if (window.innerWidth < 992 &&
-                menu.classList.contains("show") &&
-                Math.abs(window.scrollY - lastScrollY) > 3) {
-                bsMenu.hide();
-            }
-
-            lastScrollY = window.scrollY;
-        }, { passive: true });
-
-        // Desktop size par menu reset
-        window.addEventListener("resize", function () {
-            if (window.innerWidth >= 992) {
-                bsMenu.hide();
-            }
-        });
-
-    });
-</script>
         <section id="skills" class="py-5 text-white">
             <div class="container">
 
