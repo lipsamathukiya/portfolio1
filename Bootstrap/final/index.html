@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Dashboard</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" />
+
+</head>
+<style>
+    body {
+        background-color: black;
+    }
+
+    .sidebar-icon {
+        color: white;
+        cursor: pointer;
+        padding: 12px;
+
+    }
+
+    .sidebar-icon:hover {
+        background: linear-gradient(to right, #ff1725, #202528);
+        transform: scale(1.2);
+        color: white;
+    }
+
+    .oswald-font {
+        font-family: 'Oswald', sans-serif;
+        font-weight: 900;
+    }
+
+    .team-member {
+        padding: 15px;
+        cursor: pointer;
+    }
+
+    .team-member:hover {
+        background: linear-gradient(to right, #ff1725, #202528);
+
+    }
+
+    .challenge-btn {
+        transition: 0.3s;
+    }
+
+    .time-btn {
+        background: #ff303b;
+        color: white;
+    }
+
+    .time-btn:hover {
+        background: white;
+        color: #ff303b;
+    }
+
+    .reward-btn {
+        background: #202528;
+        color: white;
+    }
+
+    .reward-btn:hover {
+        background: #ff303b;
+        color: white;
+    }
+</style>
+
+<body>
+
+    <div class="bg-dark d-flex flex-column align-items-center gap-5 py-4 position-fixed vh-100"
+        style="width: 80px; z-index: 1000;">
+
+        <img src="./logo.svg" width="40" height="40" alt="Logo">
+
+        <i class="fa-regular fa-comment-dots fs-4 sidebar-icon"></i>
+        <i class="fa-regular fa-user fs-4 sidebar-icon"></i>
+        <i class="fa-solid fa-user-group fs-4 sidebar-icon"></i>
+        <i class="fa-regular fa-circle-user fs-4 sidebar-icon"></i>
+        <i class="fa-solid fa-trash fs-4 sidebar-icon"></i>
+        <i class="fa-regular fa-envelope fs-4 sidebar-icon"></i>
+
+    </div>
+
+    <div class="ms-auto overflow-auto vh-100" style="width: 94%;">
+        <nav class="navbar bg-dark px-4 py-3">
+            <div class="container-fluid">
+                <form class="d-flex" role="search">
+                    <div class="input-group" style="width: 300px;">
+                        <input class="form-control bg-dark text-white" type="search"
+                            placeholder="Type here to Search...">
+
+                        <span class="input-group-text bg-dark text-white ">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </span>
+                    </div>
+                </form>
+
+                <div class="d-flex align-items-center gap-3">
+                    <img src="./p1.svg" width="30" alt="Language">
+
+                    <i class="fa-solid fa-bell text-danger fs-5"></i>
+                    <i class="fa-regular fa-envelope text-white fs-5"></i>
+
+                    <img src="./p1.png" width="40" height="40" class="rounded-circle" alt="Profile">
+
+                    <div class="text-white">
+                        <h6 class="mb-1">Jane Copper</h6>
+                        <small>Medicine Specialist</small>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+
+        <div class="d-flex justify-content-between align-items-center px-3 py-4 bg-black">
+            <div>
+                <h1 class="fw-bold text-danger mb-3">
+                    Good Evening John..!
+                </h1>
+
+                <p class="text-white mb-0">
+                    Welcome to nairobi game zone
+                </p>
+            </div>
+            <button class="btn text-white px-4" style="background-color: #8b0000; border-radius: 10px;">
+                More Games
+            </button>
+
+        </div>
+        <div class="container-fluid py-5">
+            <div class="bg-dark text-white rounded-5 p-4" style="background-color: #151515;">
+
+                <div class="row align-items-center">
+
+                    <div class="col-md-4">
+                        <p>Video Game</p>
+
+                        <h1 class="fw-bold oswald-font" style="line-height: 1.5;">
+                            Let The <span class="text-danger">Matriarchy</span>
+                            <br>
+                            Begin
+                        </h1>
+                        <div class="d-flex gap-3 mt-4">
+                            <button class="btn btn-danger px-4 py-2">
+                                Know More
+                            </button>
+
+                            <button class="btn btn-light px-4 py-2">
+                                Play
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <img src="./m1.png" class="img-fluid" alt="Video Game"
+                            style="height: 300px; transform: scale(1.5);">
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <p class="fw-bold">Game start in:14:23:59</p>
+
+                        <video height="180" controls style="border-radius: 15px; overflow: hidden;">
+                            <source src="./vi1.webm" type="video/webm">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid p-3">
+
+            <div class="row g-3">
+
+                <!-- LEFT SIDE -->
+                <div class="col-lg-9">
+                    <div class="d-flex justify-content-between align-items-center p-2">
+                        <h2 class="text-white">Upcoming Tournaments</h2>
+                        <p class="text-danger fw-bold mb-0">More</p>
+                    </div>
+                    <div class="row g-4">
+
+                        <!-- CARD 1 -->
+                        <div class="col-lg-4 col-md-6">
+
+                            <div class="card text-white rounded-4 p-3 h-100" style="background-color:#202528;">
+
+                                <img src="./c1.png" class="card-img-top rounded-3"
+                                    style="height:150px; object-fit:cover;">
+
+                                <div class="card-body p-0 pt-3">
+
+                                    <p style="color:#ff303b; font-size:12px; font-weight:bold;">
+                                        SEPT 02
+                                        <span class="text-white">STARTING AT 6:00 AM</span>
+                                    </p>
+
+                                    <h4 class="fw-bold mt-4" style="line-height:1.5;">
+                                        COD Warzone<br>Tournament
+                                    </h4>
+
+                                    <div class="d-flex justify-content-between mt-4">
+
+                                        <div>
+                                            <p class="text-danger small">Prize</p>
+                                            <i class="fa-solid fa-trophy text-warning"></i>
+                                            <span style="font-size:12px;">$ 2500</span>
+                                        </div>
+
+                                        <div>
+                                            <p class="text-danger small">Team size</p>
+                                            <i class="fa-solid fa-users" style="color:#b16cff;"></i>
+                                            <span style="font-size:12px;">4 vs 4</span>
+                                        </div>
+
+                                        <div>
+                                            <p class="text-danger small">Sponsor</p>
+                                            <i class="fa-brands fa-steam text-primary"></i>
+                                            <span style="font-size:12px;">Steam</span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- CARD 2 -->
+                        <div class="col-lg-4 col-md-6">
+
+                            <div class="card text-white rounded-4 p-3 h-100" style="background-color:#202528;">
+
+                                <img src="./c2.png" class="card-img-top rounded-3"
+                                    style="height:150px; object-fit:cover;">
+
+                                <div class="card-body p-0 pt-3">
+
+                                    <p style="color:#ff303b; font-size:12px; font-weight:bold;">
+                                        SEPT 02
+                                        <span class="text-white">STARTING AT 6:00 AM</span>
+                                    </p>
+
+                                    <h4 class="fw-bold mt-4" style="line-height:1.5;">
+                                        COD Warzone<br>Tournament
+                                    </h4>
+
+                                    <div class="d-flex justify-content-between mt-4">
+
+                                        <div>
+                                            <p class="text-danger small">Prize</p>
+                                            <i class="fa-solid fa-trophy text-warning"></i>
+                                            <span style="font-size:12px;">$ 2500</span>
+                                        </div>
+
+                                        <div>
+                                            <p class="text-danger small">Team size</p>
+                                            <i class="fa-solid fa-users" style="color:#b16cff;"></i>
+                                            <span style="font-size:12px;">4 vs 4</span>
+                                        </div>
+
+                                        <div>
+                                            <p class="text-danger small">Sponsor</p>
+                                            <i class="fa-brands fa-steam text-primary"></i>
+                                            <span style="font-size:12px;">Steam</span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- CARD 3 -->
+                        <div class="col-lg-4 col-md-6">
+
+                            <div class="card text-white rounded-4 p-3 h-100" style="background-color:#202528;">
+
+                                <img src="./c3.png" class="card-img-top rounded-3"
+                                    style="height:150px; object-fit:cover;">
+
+                                <div class="card-body p-0 pt-3">
+
+                                    <p style="color:#ff303b; font-size:12px; font-weight:bold;">
+                                        SEPT 02
+                                        <span class="text-white">STARTING AT 6:00 AM</span>
+                                    </p>
+
+                                    <h4 class="fw-bold mt-4" style="line-height:1.5;">
+                                        COD Warzone<br>Tournament
+                                    </h4>
+
+                                    <div class="d-flex justify-content-between mt-4">
+
+                                        <div>
+                                            <p class="text-danger small">Prize</p>
+                                            <i class="fa-solid fa-trophy text-warning"></i>
+                                            <span style="font-size:12px;">$ 2500</span>
+                                        </div>
+
+                                        <div>
+                                            <p class="text-danger small">Team size</p>
+                                            <i class="fa-solid fa-users" style="color:#b16cff;"></i>
+                                            <span style="font-size:12px;">4 vs 4</span>
+                                        </div>
+
+                                        <div>
+                                            <p class="text-danger small">Sponsor</p>
+                                            <i class="fa-brands fa-steam text-primary"></i>
+                                            <span style="font-size:12px;">Steam</span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <!-- ACHIEVEMENTS HEADING -->
+                    <div class="d-flex justify-content-between align-items-center p-3 mt-5">
+
+                        <h2 class="text-white">Achievements</h2>
+
+                        <p class="text-danger fw-bold mb-0">View All</p>
+
+                    </div>
+
+                    <div class="row g-4">
+
+                        <!-- ACHIEVEMENT 1 -->
+                        <div class="col-lg-4 col-md-6">
+
+                            <div class="card text-white rounded-4 p-3 h-100" style="background-color:#202528;">
+
+                                <div class="d-flex gap-2 mb-3">
+
+                                    <span class="badge bg-black text-danger p-2">
+                                        <i class="fa-solid fa-trophy text-warning"></i>
+                                        0.0025 ETH
+                                    </span>
+
+                                    <span class="badge bg-black p-2">
+                                        <i class="fa-regular fa-clock text-info"></i>
+                                        22:49:33
+                                    </span>
+
+                                </div>
+
+                                <div class="d-flex align-items-center gap-3 mb-3">
+
+                                    <img src="./p2.png" width="45" height="45" class="rounded-circle">
+
+                                    <div>
+                                        <h5 class="fw-bold">Win 5 Games</h5>
+                                        <small class="text-danger">in Among Us</small>
+                                    </div>
+
+                                </div>
+
+                                <div class="progress mb-2" style="height:5px;">
+                                    <div class="progress-bar bg-danger" style="width:20%;"></div>
+                                </div>
+
+                                <div class="d-flex justify-content-between">
+                                    <small class="text-secondary">2/5</small>
+                                    <small class="text-danger fw-bold">3 Left</small>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <!-- ACHIEVEMENT 2 -->
+                        <div class="col-lg-4 col-md-6">
+
+                            <div class="card text-white rounded-4 p-3 h-100" style="background-color:#202528;">
+
+                                <div class="d-flex gap-2 mb-3">
+
+                                    <span class="badge bg-black text-danger p-2">
+                                        <i class="fa-solid fa-trophy text-warning"></i>
+                                        0.005 ETH
+                                    </span>
+
+                                    <span class="badge bg-black p-2">
+                                        <i class="fa-regular fa-clock text-info"></i>
+                                        20:30:15
+                                    </span>
+
+                                </div>
+
+                                <div class="d-flex align-items-center gap-3 mb-3">
+
+                                    <img src="./p3.png" width="45" height="45" class="rounded-circle">
+
+                                    <div>
+                                        <h5 class="fw-bold">Win 10 Games</h5>
+                                        <small class="text-danger">in Among Us</small>
+                                    </div>
+
+                                </div>
+
+                                <div class="progress mb-2" style="height:5px;">
+                                    <div class="progress-bar bg-danger" style="width:30%;"></div>
+                                </div>
+
+                                <div class="d-flex justify-content-between">
+                                    <small class="text-secondary">5/10</small>
+                                    <small class="text-danger fw-bold">5 Left</small>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <!-- ACHIEVEMENT 3 -->
+                        <div class="col-lg-4 col-md-6">
+
+                            <div class="card text-white rounded-4 p-3 h-100" style="background-color:#202528;">
+
+                                <div class="d-flex gap-2 mb-3">
+
+                                    <span class="badge bg-black text-danger p-2">
+                                        <i class="fa-solid fa-trophy text-warning"></i>
+                                        0.010 ETH
+                                    </span>
+
+                                    <span class="badge bg-black p-2">
+                                        <i class="fa-regular fa-clock text-info"></i>
+                                        18:15:20
+                                    </span>
+
+                                </div>
+
+                                <div class="d-flex align-items-center gap-3 mb-3">
+
+                                    <img src="./p4.png" width="45" height="45" class="rounded-circle">
+
+                                    <div>
+                                        <h5 class="fw-bold">Win 15 Games</h5>
+                                        <small class="text-danger">in Among Us</small>
+                                    </div>
+
+                                </div>
+
+                                <div class="progress mb-2" style="height:5px;">
+                                    <div class="progress-bar bg-danger" style="width:35%;"></div>
+                                </div>
+
+                                <div class="d-flex justify-content-between">
+                                    <small class="text-secondary">10/15</small>
+                                    <small class="text-danger fw-bold">5 Left</small>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- RIGHT SIDE: TEAM CHAT -->
+                <div class="col-lg-3">
+
+                    <div class="card text-white rounded-4" style="background-color:#202528;">
+                        <div class="d-flex justify-content-between align-items-center p-3 border-bottom">
+
+                            <h4 class="fw-bold mb-0" style="font-size:22px;">Team Chat</h4>
+
+                            <i class="fa-solid fa-chevron-right rounded-2 d-flex align-items-center justify-content-center"
+                                style="background-color:#ff303b; width:25px; height:25px;">
+                            </i>
+
+                        </div>
+
+                        <!-- MEMBER 1 -->
+                        <div class="team-member">
+
+                            <div class="d-flex align-items-center gap-2">
+
+                                <img src="./t1.png" width="38" height="38" class="rounded-circle">
+
+                                <i class="fa-solid fa-share text-secondary"></i>
+
+                                <div class="flex-grow-1">
+                                    <h6 class="mb-0" style="font-size:17px;">Gabriel Groomer</h6>
+                                    <small class="text-secondary" style="font-size:14px;">Level 8</small>
+                                </div>
+
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </div>
+
+                            <p class="ms-5 mt-2 mb-1" style="font-size:14px;">
+                                Lorem ipsum dolor sit amet, elit sit consectetur adipiscing elit.
+                            </p>
+
+                        </div>
+
+                        <!-- MEMBER 2 -->
+                        <div class="team-member">
+
+                            <div class="d-flex align-items-center gap-2">
+
+                                <img src="./t2.png" width="38" height="38" class="rounded-circle">
+
+                                <i class="fa-solid fa-share text-secondary"></i>
+
+                                <div class="flex-grow-1">
+                                    <h6 class="mb-0" style="font-size:17px;">Annihilator</h6>
+                                    <small class="text-secondary" style="font-size:14px;">Level 10</small>
+                                </div>
+
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </div>
+
+                            <p class="ms-5 mt-2 mb-1" style="font-size:14px;">
+                                Lorem ipsum dolor sit amet, elit sit consectetur adipiscing elit.
+                            </p>
+
+                        </div>
+
+                        <!-- MEMBER 3 -->
+                        <div class="team-member">
+
+                            <div class="d-flex align-items-center gap-2">
+
+                                <img src="./t3.png" width="38" height="38" class="rounded-circle">
+
+                                <i class="fa-solid fa-share text-secondary"></i>
+
+                                <div class="flex-grow-1">
+                                    <h6 class="mb-0" style="font-size:17px;">Eat Bullets</h6>
+                                    <small class="text-secondary" style="font-size:14px;">Level 7</small>
+                                </div>
+
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </div>
+
+                            <p class="ms-5 mt-2 mb-1" style="font-size:14px;">
+                                Lorem ipsum dolor sit amet, elit sit consectetur adipiscing elit.
+                            </p>
+
+                        </div>
+
+                        <!-- MEMBER 4 -->
+                        <div class="team-member">
+
+                            <div class="d-flex align-items-center gap-2">
+
+                                <img src="./t4.png" width="38" height="38" class="rounded-circle">
+
+                                <i class="fa-solid fa-share text-secondary"></i>
+
+                                <div class="flex-grow-1">
+                                    <h6 class="mb-0" style="font-size:17px;">Evillious Energy</h6>
+                                    <small class="text-secondary" style="font-size:14px;">Level 5</small>
+                                </div>
+
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </div>
+
+                            <p class="ms-5 mt-2 mb-1" style="font-size:14px;">
+                                Lorem ipsum dolor sit amet, elit sit consectetur adipiscing elit.
+                            </p>
+
+                        </div>
+
+                        <!-- MEMBER 5 -->
+                        <div class="team-member">
+
+                            <div class="d-flex align-items-center gap-2">
+
+                                <img src="./t4.png" width="38" height="38" class="rounded-circle">
+
+                                <i class="fa-solid fa-share text-secondary"></i>
+
+                                <div class="flex-grow-1">
+                                    <h6 class="mb-0" style="font-size:17px;">Evillious Energy</h6>
+                                    <small class="text-secondary" style="font-size:14px;">Level 5</small>
+                                </div>
+
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </div>
+
+                            <p class="ms-5 mt-2 mb-1" style="font-size:14px;">
+                                Lorem ipsum dolor sit amet, elit sit consectetur adipiscing elit.
+                            </p>
+
+                        </div>
+
+                        <!-- MEMBER 6 -->
+                        <div class="team-member">
+
+                            <div class="d-flex align-items-center gap-2">
+
+                                <img src="./t5.png" width="38" height="38" class="rounded-circle">
+
+                                <i class="fa-solid fa-share text-secondary"></i>
+
+                                <div class="flex-grow-1">
+                                    <h6 class="mb-0" style="font-size:17px;">Shadow Killer</h6>
+                                    <small class="text-secondary" style="font-size:14px;">Level 9</small>
+                                </div>
+
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </div>
+
+                            <p class="ms-5 mt-2 mb-1" style="font-size:14px;">
+                                Lorem ipsum dolor sit amet, elit sit consectetur adipiscing elit.
+                            </p>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="container-fluid p-3">
+
+                    <div class="row g-4">
+
+                        <!-- LEFT SIDE -->
+                        <div class="col-12 col-lg-9">
+
+                            <!-- HEADER -->
+                            <div class="d-flex justify-content-between align-items-center mb-4">
+
+                                <div class="text-white">
+                                    <h2 class="fw-bold">Challenges</h2>
+                                    <small>Accept the Challenge</small>
+                                </div>
+
+                                <div class="d-flex gap-2">
+                                    <button class="btn challenge-btn time-btn">Time Left</button>
+                                    <button class="btn challenge-btn reward-btn">Rewards</button>
+                                </div>
+
+                            </div>
+
+                            <!-- CHALLENGE LIST -->
+                            <div class="d-flex flex-column gap-0">
+
+                                <!-- CARD 1 -->
+                                <div class="d-flex align-items-center justify-content-between px-3 py-2 text-white"
+                                    style="background:#202528;">
+
+                                    <div class="d-flex align-items-center gap-2" style="width:25%;">
+                                        <img src="./a1.png" width="40" height="40" class="rounded-2">
+                                        <span class="fw-bold text-nowrap" style="font-size:13px;">Eat Bullets</span>
+                                    </div>
+
+                                    <div class="flex-fill text-center">
+                                        <small style="font-size:11px;">Game Mode</small>
+                                        <p class="mb-0" style="font-size:13px;">1 × 1</p>
+                                    </div>
+
+                                    <div class="flex-fill text-center">
+                                        <small style="font-size:11px;">Prize Pool</small>
+                                        <p class="mb-0" style="font-size:13px;">1000</p>
+                                    </div>
+
+                                    <div class="flex-fill text-center">
+                                        <small style="font-size:11px;">Entry</small>
+                                        <p class="mb-0" style="font-size:13px;">500</p>
+                                    </div>
+
+                                    <div class="flex-fill text-center">
+                                        <small class="text-nowrap" style="font-size:11px;">Challenge Experience</small>
+                                        <p class="text-danger mb-0" style="font-size:13px;">00H : 15M</p>
+                                    </div>
+                                </div>
+
+                                <!-- CARD 2 -->
+                                <div class="d-flex align-items-center justify-content-between px-3 py-2 text-white"
+                                    style="background:#343a40;">
+
+                                    <div class="d-flex align-items-center gap-2" style="width:25%;">
+                                        <img src="./a2.png" width="40" height="40" class="rounded-2">
+                                        <span class="fw-bold text-nowrap" style="font-size:13px;">Evillious
+                                            Energy</span>
+                                    </div>
+
+                                    <div class="flex-fill text-center">
+                                        <small style="font-size:11px;">Game Mode</small>
+                                        <p class="mb-0" style="font-size:13px;">1 × 1</p>
+                                    </div>
+                                    <div class="flex-fill text-center">
+                                        <small style="font-size:11px;">Prize Pool</small>
+                                        <p class="mb-0" style="font-size:13px;">1000</p>
+                                    </div>
+                                    <div class="flex-fill text-center">
+                                        <small style="font-size:11px;">Entry</small>
+                                        <p class="mb-0" style="font-size:13px;">500</p>
+                                    </div>
+                                    <div class="flex-fill text-center">
+                                        <small class="text-nowrap" style="font-size:11px;">Challenge Experience</small>
+                                        <p class="text-danger mb-0" style="font-size:13px;">00H : 15M</p>
+                                    </div>
+                                </div>
+
+                                <!-- CARD 3 -->
+                                <div class="d-flex align-items-center justify-content-between px-3 py-2 text-white"
+                                    style="background:#202528;">
+
+                                    <div class="d-flex align-items-center gap-2" style="width:25%;">
+                                        <img src="./a3.png" width="40" height="40" class="rounded-2">
+                                        <span class="fw-bold text-nowrap" style="font-size:13px;">Monstrous
+                                            Michel</span>
+                                    </div>
+
+                                    <div class="flex-fill text-center">
+                                        <small style="font-size:11px;">Game Mode</small>
+                                        <p class="mb-0" style="font-size:13px;">1 × 1</p>
+                                    </div>
+                                    <div class="flex-fill text-center">
+                                        <small style="font-size:11px;">Prize Pool</small>
+                                        <p class="mb-0" style="font-size:13px;">1000</p>
+                                    </div>
+                                    <div class="flex-fill text-center">
+                                        <small style="font-size:11px;">Entry</small>
+                                        <p class="mb-0" style="font-size:13px;">500</p>
+                                    </div>
+                                    <div class="flex-fill text-center">
+                                        <small class="text-nowrap" style="font-size:11px;">Challenge Experience</small>
+                                        <p class="text-danger mb-0" style="font-size:13px;">00H : 15M</p>
+                                    </div>
+                                </div>
+
+                                <!-- CARD 4 -->
+                                <div class="d-flex align-items-center justify-content-between px-3 py-2 text-white"
+                                    style="background:#343a40;">
+
+                                    <div class="d-flex align-items-center gap-2" style="width:25%;">
+                                        <img src="./a4.png" width="40" height="40" class="rounded-2">
+                                        <span class="fw-bold text-nowrap" style="font-size:13px;">Duke of Doom</span>
+                                    </div>
+
+                                    <div class="flex-fill text-center">
+                                        <small style="font-size:11px;">Game Mode</small>
+                                        <p class="mb-0" style="font-size:13px;">1 × 1</p>
+                                    </div>
+                                    <div class="flex-fill text-center">
+                                        <small style="font-size:11px;">Prize Pool</small>
+                                        <p class="mb-0" style="font-size:13px;">1000</p>
+                                    </div>
+                                    <div class="flex-fill text-center">
+                                        <small style="font-size:11px;">Entry</small>
+                                        <p class="mb-0" style="font-size:13px;">500</p>
+                                    </div>
+                                    <div class="flex-fill text-center">
+                                        <small class="text-nowrap" style="font-size:11px;">Challenge Experience</small>
+                                        <p class="text-danger mb-0" style="font-size:13px;">00H : 15M</p>
+                                    </div>
+                                </div>
+
+                                <!-- CARD 5 -->
+                                <div class="d-flex align-items-center justify-content-between px-3 py-2 text-white"
+                                    style="background:#202528;">
+
+                                    <div class="d-flex align-items-center gap-2" style="width:25%;">
+                                        <img src="./a5.png" width="40" height="40" class="rounded-2">
+                                        <span class="fw-bold text-nowrap" style="font-size:13px;">Shadow Killer</span>
+                                    </div>
+
+                                    <div class="flex-fill text-center">
+                                        <small style="font-size:11px;">Game Mode</small>
+                                        <p class="mb-0" style="font-size:13px;">1 × 1</p>
+                                    </div>
+                                    <div class="flex-fill text-center">
+                                        <small style="font-size:11px;">Prize Pool</small>
+                                        <p class="mb-0" style="font-size:13px;">1000</p>
+                                    </div>
+                                    <div class="flex-fill text-center">
+                                        <small style="font-size:11px;">Entry</small>
+                                        <p class="mb-0" style="font-size:13px;">500</p>
+                                    </div>
+                                    <div class="flex-fill text-center">
+                                        <small class="text-nowrap" style="font-size:11px;">Challenge Experience</small>
+                                        <p class="text-danger mb-0" style="font-size:13px;">00H : 15M</p>
+                                    </div>
+                                </div>
+
+                                <!-- CARD 6 -->
+                                <div class="d-flex align-items-center justify-content-between px-3 py-2 text-white"
+                                    style="background:#343a40;">
+
+                                    <div class="d-flex align-items-center gap-2" style="width:25%;">
+                                        <img src="./a6.png" width="40" height="40" class="rounded-2">
+                                        <span class="fw-bold text-nowrap" style="font-size:13px;">Gabriel Groomer</span>
+                                    </div>
+
+                                    <div class="flex-fill text-center">
+                                        <small style="font-size:11px;">Game Mode</small>
+                                        <p class="mb-0" style="font-size:13px;">1 × 1</p>
+                                    </div>
+                                    <div class="flex-fill text-center">
+                                        <small style="font-size:11px;">Prize Pool</small>
+                                        <p class="mb-0" style="font-size:13px;">1000</p>
+                                    </div>
+                                    <div class="flex-fill text-center">
+                                        <small style="font-size:11px;">Entry</small>
+                                        <p class="mb-0" style="font-size:13px;">500</p>
+                                    </div>
+                                    <div class="flex-fill text-center">
+                                        <small class="text-nowrap" style="font-size:11px;">Challenge Experience</small>
+                                        <p class="text-danger mb-0" style="font-size:13px;">00H : 15M</p>
+                                    </div>
+                                </div>
+
+                                <!-- CARD 7 -->
+                                <div class="d-flex align-items-center justify-content-between px-3 py-2 text-white"
+                                    style="background:#202528;">
+
+                                    <div class="d-flex align-items-center gap-2" style="width:25%;">
+                                        <img src="./a7.png" width="40" height="40" class="rounded-2">
+                                        <span class="fw-bold text-nowrap" style="font-size:13px;">Annihilator</span>
+                                    </div>
+
+                                    <div class="flex-fill text-center">
+                                        <small style="font-size:11px;">Game Mode</small>
+                                        <p class="mb-0" style="font-size:13px;">1 × 1</p>
+                                    </div>
+                                    <div class="flex-fill text-center">
+                                        <small style="font-size:11px;">Prize Pool</small>
+                                        <p class="mb-0" style="font-size:13px;">1000</p>
+                                    </div>
+                                    <div class="flex-fill text-center">
+                                        <small style="font-size:11px;">Entry</small>
+                                        <p class="mb-0" style="font-size:13px;">500</p>
+                                    </div>
+                                    <div class="flex-fill text-center">
+                                        <small class="text-nowrap" style="font-size:11px;">Challenge Experience</small>
+                                        <p class="text-danger mb-0" style="font-size:13px;">00H : 15M</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <!-- RIGHT SIDE VIDEO -->
+                        <div class="col-12 col-lg-3">
+
+                            <div class="d-flex flex-column gap-4 mt-5">
+
+                                <video controls class="w-100 rounded-4"
+                                    style="height:220px; object-fit:cover; background:#303030;">
+                                    <source src="./vi1.webm" type="video/mp4">
+                                </video>
+
+                                <video controls class="w-100 rounded-4"
+                                    style="height:220px; object-fit:cover; background:#303030;">
+                                    <source src="./vi1.webm" type="video/mp4">
+                                </video>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <footer class="py-3 px-3" style="background-color: #343a40;">
+                    <div class="container-fluid d-flex justify-content-between align-items-center flex-wrap gap-3">
+                        <div class="d-flex gap-3 align-items-center">
+                            <a href="#" class="text-white text-decoration-none">
+                                Privacy Policy
+                            </a>
+
+                            <a href="#" class="text-white text-decoration-none">
+                                Terms of Use
+                            </a>
+                        </div>
+                        <div class="text-white">
+                            <p class="mb-0">
+                                © 2021 XRay, Made with ❤ by
+                                <span class="text-info">IQONIC Design.</span>
+                            </p>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
